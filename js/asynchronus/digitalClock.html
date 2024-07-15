@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100svh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="hours"></div>
+    <div class="minutes"></div>
+    <div class="seconds"></div>
+    <script >
+        function fun(){
+            var x = new Date();
+            document.getElementsByClassName("hours")[0].innerHTML = x.getHours()+":";
+            document.getElementsByClassName("minutes")[0].innerHTML = x.getMinutes()+":";
+            document.getElementsByClassName("seconds")[0].innerHTML = x.getSeconds();
+        }
+        setInterval(fun,0);
+    </script>
+</body>
+</html>

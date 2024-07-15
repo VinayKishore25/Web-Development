@@ -1,0 +1,174 @@
+#main{
+    width: 100%;
+    height: 100svh;
+    background-color: white;
+}
+#part1{
+    width: 100%;
+    height: 50svh;
+    /* background-color: rgb(12, 167, 228); */
+    background: linear-gradient(to top right,#2d4047,#0ef0f8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.content1{
+    /* border: 0.5px solid black; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.flex1{
+    /* border: 1px solid; */
+    width:100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.box{
+    border: 0.5px solid black;
+    width: 20px;
+    height: 20px;
+    box-shadow: 6px 6px 3px 0px black;
+    border-radius: 3px;
+}
+.topic{
+    font-weight: bolder;
+    font-size: 23px;
+}
+.flex2{
+    /* border: 1px solid black; */
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav1{
+    font-size: 20px;
+}
+.nav2{
+    font-size: 20px;
+    color:aliceblue;
+}
+.flex3{
+    /* border: 1px solid black; */
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content2{
+    /* border: 1px solid black; */
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.head1{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.head2{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #0E506B;
+}
+.bar{
+    width: 100%;
+    height: 5svh;
+    border-radius: 1rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+input{
+    width: 80%;
+    height: 4.5svh;
+    border:none;
+    
+}
+.search{
+    width: 60px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: rgb(47, 244, 240);
+    background: linear-gradient(to top right,#247897,#0ef0f8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#part2{
+    width: 100%;
+    height: 50svh;
+    background-color: #82CFC7;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top right,black,white);
+}
+.web{
+    height: 300px;
+    width: 230px;
+    border-radius: 20px;
+    background-color: white;
+    /* position: absolute;
+    top: 300px;
+    left: 100px; */
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to bottom right,#285B62,#26666E,#969696,#272727);
+}
+.none{
+    width: 5%;
+}
+.share{
+    background-color: transparent;
+    height: 3%;
+    width: 20%;
+    position: absolute;
+    top:90%;
+    left:55%;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+.penguin{
+    /* background-image: url("../images/undraw_Remote_design_team_re_urdx.png"); */
+    background-size: 100%;
+    height:40%;
+    width: 90%;
+}
+.finance{
+    margin-top: -50px;
+    height: 300px;
+    width: 350px;
+    border-radius: 20px;
+    /* background-color:rgb(47, 244, 240); */
+    background: linear-gradient(to bottom right,#14CFD7,#24767E,#ECECEC,#979797);
+    /* position: absolute;
+    top: 300px;
+    left: 380px; */
+}
+.finance button{
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+}

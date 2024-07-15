@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100svh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .clock{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="hours">00</div>
+        <div class="space">:</div>
+        <div class="minutes">00</div>
+        <div class="space">:</div>
+        <div class="seconds">00</div>
+        <div class="space">:</div>
+        <div class="milliseconds">00</div>
+    </div>
+    <div class="buttons">
+        <button onclick="fun()" class="start">Start</button>
+        <button onclick="stp()" class="stop">stop</button>
+        <button onclick="rst()" class="reset">reset</button>
+    </div>
+    <script >
+        function fun(){
+            milliseconds = setInterval(updateMilliSecond,10);
+            seconds = setInterval(updateSecond,1000);
+            minutes = setInterval(updateMinute,60000);
+            hours = setInterval(updateHour,3600000);
+        }
+        function updateMilliSecond() {
+            let x = document.getElementsByClassName("milliseconds")[0];
+            var num = parseInt(x.innerHTML);
+            x.innerHTML = (num + 1)%100;
+        }
+        function updateSecond() {
+            let x = document.getElementsByClassName("seconds")[0];
+            var num = parseInt(x.innerHTML);
+            x.innerHTML = (num + 1)%60;
+        }
+        function updateMinute(){
+            let x = document.getElementsByClassName("minutes")[0];
+            var num = parseInt(x.innerHTML);
+            x.innerHTML = (num + 1)%60;
+        }
+        function updateHour(){
+            let x = document.getElementsByClassName("hours")[0];
+            var num = parseInt(x.innerHTML);
+            x.innerHTML = num + 1;
+        }
+        var seconds,minutes,hours,milliseconds;
+        function stp(){
+            clearInterval(milliseconds);
+            clearInterval(seconds);
+            clearInterval(minutes);
+            clearInterval(hours);
+        }
+        function rst(){
+            clearInterval(milliseconds);
+            clearInterval(seconds);
+            clearInterval(minutes);
+            clearInterval(hours);
+            document.getElementsByClassName("milliseconds")[0].innerHTML = "00";
+            document.getElementsByClassName("seconds")[0].innerHTML = "00";
+            document.getElementsByClassName("minutes")[0].innerHTML = "00";
+            document.getElementsByClassName("hours")[0].innerHTML = "00";
+        }
+    </script>
+</body>
+</html>

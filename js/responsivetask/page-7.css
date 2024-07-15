@@ -1,0 +1,44 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer1{
+    width: 100%;
+    height: 300px;
+    background-color: #654AFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.follow{
+    font-size: 400%;
+    color: white;
+}
+.socialMedia{
+    width: 200px;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.whitebar{
+    width: 80px;
+    height: 7px;
+    background-color: white;
+}
+.socialMedia i{
+    color: white;
+}
+.footer2{
+    width: 100%;
+    height: 250px;
+    background-color: #333333;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}

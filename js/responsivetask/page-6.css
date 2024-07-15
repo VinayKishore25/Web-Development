@@ -1,0 +1,77 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.page6{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.benefits{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.data1{
+    font-size:42px;
+    font-weight:700;
+    color: #654AFF;
+}
+.data2{
+    font-family: typewriter;
+    font-size: 18px;
+}
+.chatNow{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.chatNow button{
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    border: none;
+    background-color: white;
+}
+.mainHeadline
+{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.firstHeadline{
+    font-family: image;
+    color: #654AFF;
+    font-size: 64px;
+}
+.secondHeadline{
+    font-family: moirest;
+    font-size: 24px;
+}
+.form{
+    display: none;
+}
+
+
+
+
+@font-face {
+    font-family: typewriter;
+    src: url(../../css/fonts/Oswald-Light.ttf);
+}
+@font-face {
+    font-family: image;
+    src: url(../../css/fonts/Image.ttf);
+}
+@font-face {
+    font-family: moirest;
+    src: url(../../css/fonts/moirest/Moirest\ Bold.ttf);
+}
