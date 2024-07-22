@@ -1,0 +1,52 @@
+const StartBuildForm=()=>{
+    let newWindow = window.open('about:blank', '_blank');
+    newWindow.document.write(`
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>New Page</title>
+        </head>
+        <body>
+            <div id="form-container"></div>
+            <script>
+                function createForm() {
+                    let template1 = ${JSON.stringify(template1)};
+                    let res = ${JSON.stringify(res)};
+                    let formContainer = document.getElementById('form-container');
+                    formContainer.innerHTML = '';
+
+                    for (let j = 0; j < template1.length; j++) 
+                    {
+                        let label = document.createElement('label');
+                        label.innerHTML = template1[j];
+                        label.setAttribute('for', 'input' + j);
+                        formContainer.appendChild(label);
+                        let input = document.createElement('input');
+                        input.setAttribute('type', 'text');
+                        input.setAttribute('id', 'input' + j);
+                        input.setAttribute('name', 'input' + j);
+                        input.value = res[j];
+                        input.addEventListener('input', function(event) {
+                            res[j] = event.target.value; // Store data in res array
+                        });
+                        formContainer.appendChild(input);
+
+                        // Create line break
+                        formContainer.appendChild(document.createElement('br'));
+                    }
+                    let submitButton = document.createElement('button');
+                    submitButton.innerHTML = 'Submit';
+                    submitButton.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        console.log(res); // Handle form submission
+                    });
+                    formContainer.appendChild(submitButton);
+                }
+                createForm();
+            </script>
+        </body>
+        </html>
+    `);
+}

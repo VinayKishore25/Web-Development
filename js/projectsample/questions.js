@@ -76,7 +76,6 @@ function moveBack(){
 function storeData(event)
 {
     res[i] = event.target.value;
-    // console.log(res);
 }
 new TypeIt("#prompt", {
     strings: "Welcome to Resume Builder!!!",
@@ -105,7 +104,3 @@ var inputFieldAddress = document.getElementById("inputField");
 
 
 
-const StartBuildForm=()=>{
-    alert('test')
-    console.log(res)
-}
