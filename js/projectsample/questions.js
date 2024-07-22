@@ -14,7 +14,7 @@ function moveNext()
         continueButtonAddress.style.display = "none";
         return;
     }
-    if(i>-1)
+    if(i > -1)
     {
         inputFieldAddress.style.display = "block";
     }
@@ -34,7 +34,7 @@ function moveBack(){
         continueButtonAddress.style.display = "block";
         previousButtonAddress.style.display = "none";
     }
-    if(i>-1)
+    if(i > -1)
     {
         inputFieldAddress.style.display = "block";
     }
