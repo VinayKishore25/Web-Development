@@ -1,52 +1,121 @@
-const StartBuildForm=()=>{
-    let newWindow = window.open('about:blank', '_blank');
-    newWindow.document.write(`
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>New Page</title>
-        </head>
-        <body>
-            <div id="form-container"></div>
-            <script>
-                function createForm() {
-                    let template1 = ${JSON.stringify(template1)};
-                    let res = ${JSON.stringify(res)};
-                    let formContainer = document.getElementById('form-container');
-                    formContainer.innerHTML = '';
+body{
+    width: 100%;
+    height: 100svh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
 
-                    for (let j = 0; j < template1.length; j++) 
-                    {
-                        let label = document.createElement('label');
-                        label.innerHTML = template1[j];
-                        label.setAttribute('for', 'input' + j);
-                        formContainer.appendChild(label);
-                        let input = document.createElement('input');
-                        input.setAttribute('type', 'text');
-                        input.setAttribute('id', 'input' + j);
-                        input.setAttribute('name', 'input' + j);
-                        input.value = res[j];
-                        input.addEventListener('input', function(event) {
-                            res[j] = event.target.value; // Store data in res array
-                        });
-                        formContainer.appendChild(input);
+.resume_body{
+    width: 600px;
+    height: fit-content;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
-                        // Create line break
-                        formContainer.appendChild(document.createElement('br'));
-                    }
-                    let submitButton = document.createElement('button');
-                    submitButton.innerHTML = 'Submit';
-                    submitButton.addEventListener('click', function(event) {
-                        event.preventDefault();
-                        console.log(res); // Handle form submission
-                    });
-                    formContainer.appendChild(submitButton);
-                }
-                createForm();
-            </script>
-        </body>
-        </html>
-    `);
+.head-style{
+    width: 95%;
+    height: 30px;
+    background-color: cadetblue;
+    margin: auto;
+}
+
+.header{
+    width: 95%;
+    height: 160px;
+    /* background-color: lightgreen; */
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.profile-pic{
+    width: 115px;
+    height: 115px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: auto;
+    /* background-color: green; */
+}
+
+.personal-details{
+    width: 400px;
+    height: 100%;
+    /* background-color: yellow; */
+    margin: auto;
+    line-height: 10px;
+}
+
+p{
+    font-size: 14px;
+}
+
+.summary{
+    width: 95%;
+    height: 150px;
+    margin: auto;
+    /* background-color: lightgreen; */
+}
+
+hr{
+    width: 95%;
+    height: 1px;
+    background-color: black;
+    margin: auto;
+}
+
+.education{
+    width: 95%;
+    height: 175px;
+    margin: auto;
+    /* background-color: lightgreen; */
+}
+
+.education-details{
+    line-height: 10px;
+}
+
+.skills{
+    width: 95%;
+    height: 150px;
+    margin: auto;
+    /* background-color: lightgreen; */
+}
+
+.skills-list{
+    width: 95%;
+    height: 100px;
+    /* background-color: lightblue; */
+}
+
+.skills-list ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list ul li{
+    margin: 15px;
+}
+
+.projects{
+    width: 95%;
+    height: 215px;
+    margin: auto;
+    /* background-color: lightgreen; */
+}
+
+.project-details{
+    line-height: 15px;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    margin: 10px;
+    cursor: pointer;
 }
