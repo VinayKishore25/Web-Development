@@ -7,5 +7,12 @@
 </head>
 <body>
     <div id="sample">hello</div>
+    <script>
+         document.addEventListener('DOMContentLoaded', function () {
+            let res = JSON.parse(localStorage.getItem('formData'));
+            let sample = document.getElementById("sample");
+            sample.innerHTML = res[0] + "namste" + res[1] + "" + res[2] + "hi";
+         });
+    </script>
 </body>
 </html>
