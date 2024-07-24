@@ -76,7 +76,6 @@ const createForm = () => {
         });
 
         formContainer.appendChild(input);
-
         formContainer.appendChild(document.createElement('br'));
 
     }

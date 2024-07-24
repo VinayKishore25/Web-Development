@@ -1,0 +1,248 @@
+@supports (animation-timeline: view()) {
+  @keyframes fade-out {
+    to {
+      background-size: 150%;
+      opacity: 0;
+    }
+  }
+  @keyframes zoom-out {
+    to {
+      font-size: 2rem;
+      padding-left: .1em;
+    }
+  }
+  @keyframes appear {
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes max-out {
+    to {
+      max-width: 100%;
+    }
+  }
+  .hero {
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: exit -100px;
+  }
+  nav {
+    animation: max-out linear both;
+    animation-timeline: view();
+    animation-range-start: 80vh;
+    animation-range-end: 100vh;
+  }
+  nav:after {
+    animation: appear linear both;
+    animation-timeline: view();
+    animation-range-start: 60vh;
+    animation-range-end: 100vh;
+  }
+  .logo {
+    animation: zoom-out linear both;
+    animation-timeline: view();
+    animation-range-start: 10vh;
+    animation-range-end: 100vh;
+  }
+}
+@supports (not (animation-timeline: view())) {
+  .notice:after {
+    content: ' animation-timeline of scroll and view are currently not supported in your browser.';
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..700&display=swap');
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  background-color:#EFEFEF;
+  color:black;
+}
+.hero, nav {
+  max-width: 75ch;
+  margin: 0 auto;
+  padding-inline: 1em;
+}
+h1, h2, h3 {
+  text-wrap: balance;
+}
+h1
+{
+  color: hsl(290 85% 75%);
+}
+
+p {
+  text-wrap: pretty;
+  line-height: 1.5;
+}
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  min-height: 3rem;
+  background-color:#B5C0D0;
+  backdrop-filter: blur(.2em);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  color:black;
+}
+nav ul {
+  padding-right: 1em;
+  margin: 0;
+  display: inline-flex;
+  gap: 1rem;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: .5s linear;
+}
+.hero {
+  min-height: 60vh;
+  background-image: url("Logo2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-size: 100%;
+
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  display: grid;
+  align-content: center;
+  container-type: inline-size;
+  position: relative;
+}
+.hero h1 {
+  font-size: clamp(2rem, 7cqi, 10rem);
+  font-weight: 100;
+  max-width: 50%;
+  color:black;
+}
+
+nav:after {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  height: .05em;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(90deg, hsl(0, 100%, 70%), hsl(30, 100%, 70%), hsl(60, 100%, 70%), hsl(90, 100%, 70%), hsl(120, 100%, 70%), hsl(150, 100%, 70%), hsl(180, 100%, 70%), hsl(210, 100%, 70%), hsl(240, 100%, 70%), hsl(270, 100%, 70%), hsl(300, 100%, 70%), hsl(330, 100%, 70%), hsl(360, 100%, 70%));
+  background: linear-gradient(in hsl longer hue 90deg, #f66 0 0);
+}
+.logo {
+  font-weight: 200;
+  font-size:20px;
+  background-color:white;
+  background-clip: text;
+  color:black;
+}
+
+.text
+{
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+}
+.homepage
+{
+  width: 100%;
+}
+
+.homesecondpage
+{
+  height: 700px;
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.homepagecotation
+{
+  height: 400px;
+  width:500px;
+  position: relative;
+}
+.cotation 
+{
+  height: 150px;
+  width: 500px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 70px;
+  font-size: 40px;
+}
+
+.buttons
+{
+  height:100px;
+  width: 300px;
+  position: absolute;
+  top: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  left: 70px;
+}
+.homepageseepreview
+{
+  height: 50px;
+  width: 200px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background:linear-gradient(to bottom,#394FEB,#7D4EB1);
+  color: white;
+  
+}
+.homepagegetstarted
+{
+  height: 50px;
+  width: 200px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background:linear-gradient(to bottom,#394FEB,#7D4EB1);
+  color: white;
+}
+.homepageimage
+{
+  height: 400px;
+  width:400px;
+  background-image: url("sample2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+a{
+  text-decoration: none;
+}
+.logo{
+  height: 40px;
+  width: 50px;
+}
+button
+{
+  height:20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+ 
+}
+i{
+  color: #270949;
+  
+}

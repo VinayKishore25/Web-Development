@@ -18,6 +18,10 @@ function changeToAdmin(){
         innerForm.removeChild(update);
     } 
     catch{}
+    try {
+        innerForm.removeChild(remember);
+    } 
+    catch{}
 }
 function changeToUser()
 {
@@ -41,6 +45,10 @@ function changeToUser()
         innerForm.removeChild(update);
     } 
     catch{}
+    try {
+        innerForm.removeChild(remember);
+    } 
+    catch{}
 }
 function changeToSignUp()
 {
@@ -56,6 +64,10 @@ function changeToSignUp()
     register.innerHTML ="Register";
     register.setAttribute("class","login");
     innerForm.appendChild(register);
+    noRegister.innerHTML = "Have an Account!!!";
+    noRegister.setAttribute("class","forget");
+    noRegister.style.marginTop = "30px";
+    innerForm.appendChild(noRegister);
 }
 function resetPassword(){
     email.placeholder = "Your Id";
@@ -66,11 +78,16 @@ function resetPassword(){
     update.innerHTML = "Update";
     update.setAttribute("class","login");
     innerForm.appendChild(update);
+    remember.innerHTML = "Remember Password!!!"
+    remember.setAttribute("class","forget");
+    remember.style.marginTop = "30px";
+    innerForm.appendChild(remember);
 }
 var newInput = document.createElement("input");
 var register = document.createElement("button");
 var update = document.createElement("button");
-
+var remember = document.createElement("button");
+var noRegister = document.createElement("button");
 
 
 var form = document.getElementById("form");
