@@ -18,7 +18,7 @@
             <div class="logInForm" id="logInForm">
                 <div class="sampleText3">You are attempting to log into the Resume Builder Portal as an admin.</div>
                 <div class="sampleText4">Not An Admin</div>
-                <button onclick="changeToUser()"><i class="fa-solid fa-arrow-right"></i>&nbsp;Sign up</button>
+                <button onclick="changeToUser()"><i class="fa-solid fa-arrow-right"></i>&nbsp;Login as User</button>
             </div>
         </div>
         <div class="form" id="form">
@@ -26,9 +26,9 @@
                 User Login
             </div>
             <form id="innerForm">
-                <input type="text" class="email" id="email" placeholder="User Id"/>
-                <input type="password" class="password" id="password" placeholder="Password"/>
-                <button class="login" id="login">Login</button>
+                <input type="text" class="email" id="email" onchange="inputEmail(event)" placeholder="User Id"/>
+                <input type="password" class="password" onchange="inputPassword(event)" id="password" placeholder="Password"/>
+                <button class="login" id="login" onclick="validate(event)">Login</button>
             </form>
             <button onclick="resetPassword()" class="forget" id="forget">Forget Password?</button>
             <button class="signUpButton" id="signUpButton" onclick="changeToSignUp()">Don't have an account</button>
