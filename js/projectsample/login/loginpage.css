@@ -127,3 +127,23 @@ body{
     background-color: transparent;
     border: none;
 }
+.form .changeButton{
+    width: 200px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+@media screen and (max-width:800px) {
+    .loginBlock{
+        display: none;
+    }
+    .form{
+        height: 500px;
+        transform: translateX(0px);
+    }
+    .form .changeButton{
+        margin-left: 60px;
+        display: block;
+    }
+}

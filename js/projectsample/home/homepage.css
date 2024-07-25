@@ -58,6 +58,9 @@ body {
   margin: 0;
   background-color:#EFEFEF;
   color:black;
+  /* background-image: url("https://ot.az.gov/sites/default/files/styles/slick_media/public/2022-03/leone-venter-VieM9BdZKFo-unsplash%20%281%29.jpg?h=98bef774&itok=aKLxS6Gs");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
 }
 .hero, nav {
   max-width: 75ch;
@@ -66,6 +69,7 @@ body {
 }
 h1, h2, h3 {
   text-wrap: balance;
+  /* line-height: .6; */
 }
 h1
 {
@@ -101,8 +105,12 @@ nav ul li {
   cursor: pointer;
   transition: .5s linear;
 }
+/* nav ul li:hover {
+  text-decoration: underline #5EB0E5;
+} */
 .hero {
   min-height: 60vh;
+  /* background-image: url("https://rukminim2.flixcart.com/image/850/1000/knoxnrk0/painting/o/y/l/18-d08-dbrush-original-imag2b5h9nbr8xps.jpeg?q=90&crop=false"); */
   background-image: url("Logo2.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -110,9 +118,11 @@ nav ul li {
 
   background-repeat: no-repeat;
   background-position: 100% 50%;
+  /* mix-blend-mode: lighten; */
   display: grid;
   align-content: center;
   container-type: inline-size;
+  /* background-color: aqua; */
   position: relative;
 }
 .hero h1 {
@@ -120,6 +130,9 @@ nav ul li {
   font-weight: 100;
   max-width: 50%;
   color:black;
+  
+  /* background-color:aqua; */
+ 
 }
 
 nav:after {
@@ -155,6 +168,7 @@ nav:after {
 {
   height: 700px;
   width: 100%;
+  /* background-color: #5EB0E5; */
   display: flex;
   gap: 50px;
   flex-wrap: wrap;
@@ -166,17 +180,23 @@ nav:after {
 {
   height: 400px;
   width:500px;
+  /* border: 1px solid black; */
   position: relative;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 }
 .cotation 
 {
   height: 150px;
   width: 500px;
+  /* border: 1px solid black; */
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   top: 70px;
+  /* left: 70px; */
   font-size: 40px;
 }
 
@@ -184,6 +204,7 @@ nav:after {
 {
   height:100px;
   width: 300px;
+  /* border: 1px solid black; */
   position: absolute;
   top: 220px;
   display: flex;
@@ -232,17 +253,89 @@ a{
   height: 40px;
   width: 50px;
 }
-button
-{
-  height:20px;
+
+
+button {
+  height: 20px;
   width: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
- 
+  display: none;
 }
 i{
   color: #270949;
   
+}
+
+.animated_div {
+  height:600px;
+  width: 0;
+  background-color:#B5C0D0;
+  position:fixed;
+  top:0px;
+  right: 0px;
+  transition: width 0.3s ease-in-out;
+  z-index: 2;
+}
+.animated_div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height:49px;
+  width: 100%;
+  background-color:#B5C0D0;
+}
+.Accounts {
+  position: relative;
+  cursor: pointer; 
+  
+  
+}
+.Accountschild
+ {
+  height:100px;
+  width: 200px;
+  background-color: rgba(128, 128, 128, 0.5);
+
+  content: '';
+  position: absolute;
+  top: 32px;
+  right: -15px;
+  display: none; 
+}
+.rollno
+{
+  height: 50px;
+  width: 200px;
+  background-color:whitesmoke;
+  display: flex;
+  
+}
+.userlogo
+{
+  height: 50px;
+  width:50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.userinfo
+{
+  height: 50px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logout
+{
+  height:50px;
+  width:200px;
+  background-color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
