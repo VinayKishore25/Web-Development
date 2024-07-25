@@ -4,7 +4,7 @@ body{
 }
 .loginPage{
     width: 100%;
-    height: 100svh; 
+    height: 100svh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +22,7 @@ body{
     height: 350px;
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
 .signUpForm{
     width: 350px;
@@ -63,15 +64,17 @@ body{
     color: white;
 }
 .form{
+    position: absolute;
+    top: -50px;
+    left:53%;
     width: 350px;
-    height: 400px;
+    height: 450px;
     border: 2px solid;
     background-color: white;
     display: flex;
     flex-direction: column;
     gap: 30px;
     transition: all 0.5s ease-in;
-    transform: translateX(-380px);
 }
 .form .formName{
     margin-top: 30px;
@@ -130,20 +133,32 @@ body{
 .form .changeButton{
     width: 200px;
     height: 30px;
+    margin-right: 65px;
     background-color: transparent;
     border: none;
     display: none;
 }
 @media screen and (max-width:800px) {
-    .loginBlock{
+    .signUpForm,.logInForm{
         display: none;
     }
+    .loginBlock{
+        background-color: transparent;
+    }
     .form{
+        width: 350px;
         height: 500px;
-        transform: translateX(0px);
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-180px);
     }
     .form .changeButton{
         margin-left: 60px;
         display: block;
     }
 }
+/* @media screen and (max-width:500px){
+    .form{
+        width: 250px;
+    }
+} */

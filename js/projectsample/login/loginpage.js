@@ -6,7 +6,7 @@ function changeToAdmin()
 	login.style.display = "block";
 	forgetPassword.style.display = "none";
 	signUpButton.style.display = "none";
-	form.style.transform = "translateX(-780px)";
+	form.style.left = "3%";
 	removeDynamicElements();
 	login.onclick = null;
 	login.onclick = function (event) 
@@ -40,7 +40,7 @@ function changeToUser()
 	login.style.display = "block";
 	forgetPassword.style.display = "block";
 	signUpButton.style.display = "block";
-	form.style.transform = "translateX(-380px)";
+	form.style.left ="53%";
 	removeDynamicElements();
 	login.onclick = null;
 	login.onclick = function (event) 
@@ -157,21 +157,22 @@ function removeDynamicElements()
 	try { innerForm.removeChild(register); } catch {}
 	try { innerForm.removeChild(update); } catch {}
 	try { innerForm.removeChild(remember); } catch {}
+	try { innerForm.removeChild(noRegister); } catch {}
 }
-function media() 
+function media()
 {
 	let changeButton = document.getElementById("changeButton");
 	if (changeButton.innerHTML == "Not an User") 
 	{
 		changeButton.innerHTML = "Not an Admin";
 		changeToAdmin();
-		form.style.transform = "translateX(0px)";
+		form.style.left = "53%";
 	} 
 	else 
 	{
 		changeButton.innerHTML = "Not an User";
 		changeToUser();
-		form.style.transform = "translateX(0px)";
+		form.style.left = "53%";
 	}
 }
 
