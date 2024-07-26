@@ -63,8 +63,13 @@ body
 	background-color:#EFEFEF;
 	color:black;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
+}
+.homepage{
+	height:fit-content;
 }
 .hero, nav 
 {
@@ -109,7 +114,7 @@ nav ul li
 .hero 
 {
 	min-height: 60vh;
-	background-image: url("Logo2.png");
+	background-image: url("../Assests/Logo2.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-size: 100%;
@@ -148,6 +153,7 @@ nav ul li
 .homesecondpage
 {
 	height: 700px;
+	height: fit-content;
 	width: 100%;
 	display: flex;
 	gap: 50px;
@@ -212,8 +218,9 @@ nav ul li
 .homepageimage
 {
 	height: 400px;
+	max-height: fit-content;
 	width:400px;
-	background-image: url("sample2.png");
+	background-image: url("../Assests/sample2.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }

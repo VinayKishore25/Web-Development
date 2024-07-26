@@ -1,3 +1,34 @@
+// var jyo = false;
+var ic = document.getElementById("iframe");
+var ico =document.getElementById("crossmark");
+fun=()=>{
+    // if(jyo===false){
+        
+        var ic = document.getElementById("iframe");
+        ic.style.display="none";
+        var sb=document.getElementById("sidebar");
+        sb.style.opacity="1";
+        sb.style.width="300px";
+        sb.style.transition="all 0.5s ease";
+        var nb=document.getElementById("navbar");
+        nb.style.opacity="1";
+        nb.style.width="300px";
+        nb.style.transition="all 0.5s ease";
+        ico.style.display="block";
+}
+jyo1=()=>{
+        var ico =document.getElementById("crossmark");
+        ico.style.display="none";
+        var sb=document.getElementById("sidebar");
+        sb.style.opacity="0";
+        sb.style.width="0px";
+        sb.style.transition="all 0.5s ease";
+        var nb=document.getElementById("navbar");
+        nb.style.opacity="0";
+        nb.style.width="0px";
+        nb.style.transition="all 0.5s ease";
+        ic.style.display="block";
+}
 Vinay=()=>{
     let img = document.getElementById("leftimage");
     img.style.opacity = '0';
@@ -6,7 +37,7 @@ Vinay=()=>{
         let img = document.getElementById("leftimage");
         img.style.opacity = '1';
         img.style.transition = 'all 0.5s ease';
-        img.src = "../Assests/logo.png";
+        img.src = "../Assests/vinay.jpg";
         let md = document.getElementById("memberdesignation");
         md.innerHTML="Team Lead";
         md.style.transition = 'all 0.5s ease';
@@ -40,7 +71,7 @@ Praveen=()=>{
         let img = document.getElementById("leftimage");
         img.style.opacity = '1';
         img.style.transition = 'all 0.5s ease';
-        img.src = "../Assests/logo.png";
+        img.src = "../Assests/praveen.png";
         let md = document.getElementById("memberdesignation");
         md.innerHTML="Team Lead";
         md.style.transition = 'all 0.5s ease';

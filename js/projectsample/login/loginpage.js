@@ -19,6 +19,7 @@ function changeToAdmin()
 			if (passwordAdmin[index] == passwordValue) 
 			{
 				event.preventDefault();
+				localStorage.setItem("loggedUser",JSON.stringify(email.value));
 				window.location.href = "../home/homepage.html";
 			} 
 			else 
@@ -51,6 +52,7 @@ function changeToUser()
 		{
 			if (passwordUser[index] == password.value) 
 			{
+				localStorage.setItem("loggedUser",JSON.stringify(email.value));
 				window.location.href = "../home/homepage.html";
 			} 
 			else 
@@ -139,6 +141,7 @@ function validate(event)
 	{
 		if (passwordUser[index] == password.value) 
 		{
+			localStorage.setItem("loggedUser",JSON.stringify(email.value));
 			window.location.href = "../home/homepage.html";
 		} 
 		else 

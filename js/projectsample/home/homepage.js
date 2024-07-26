@@ -75,5 +75,6 @@ function logout(element)
     {
       child.classList.add('show');
     }
-    
-  }
+}
+let userLogin = document.getElementById("userLogin");
+userLogin.innerHTML = JSON.parse(localStorage.getItem('loggedUser'));

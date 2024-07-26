@@ -1,0 +1,170 @@
+.down{
+    width: 100%;
+    /* height: 500px; */
+    background-color: rgb(73, 73, 162);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.upperPart{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.upperPart .content1{
+    font-size: 48px;
+    color: white;
+}
+.upperPart .content2{
+    width: 70%;
+    font-size: 24px;
+    color: white;
+}
+.buttonsBar{
+    color: white;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(35, 35, 86);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.lowerPart{
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    width: 25%;
+    height: 100%;
+    border: 2px solid white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overview{
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.youtubeVideo{
+    background-color: white;
+    width: 700px;
+    height: 300px;
+}
+.steps{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    flex-direction: column;
+    gap: 30px;
+}
+.buildResume{
+    background-color: rgb(61, 221, 61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 220px;
+    height: 40px;
+}
+.resumeSamples{
+    width: 100%;
+    min-height: 500px;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.sampleresume{
+    width: 300px;
+    height: 400px;
+    background-color: white;
+}
+.showCompanies{
+    display: none;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+}
+.tagLine{
+    margin-top: 30px;
+    font-size: 32px;
+    color: white;
+}
+.companiesGrid{
+    margin-left: 100px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+.companies img{
+    width: 150px;
+    height: 150px;
+}
+.reviews{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.reviewTagLine{
+    margin-top: 40px;
+    font-size: 24px;
+    color: white;
+}
+.reviewsGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.completeReview{
+    border-radius: 20px;
+    width: 350px;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.reviewDescription{
+    width: 90%;
+}
+.nameAndRole{
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+@media screen and (max-width:800px) {
+    .companiesGrid{
+        margin-left: 0;
+        display: grid;
+        grid-template-columns: 100px 100px;
+        grid-gap: 50px;
+    }
+    .companies img{
+        width: 100px;
+        height: 100px;
+    }
+    .reviewsGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
