@@ -1,12 +1,25 @@
+/* .upDivider{
+    background-color: black;
+    width: 50%;
+    height: 100px;
+    border-bottom-left-radius: 550px;
+    border-bottom-right-radius: 50px;
+}
+.downDivider{
+    background-color: red;
+    width: 50%;
+    height: 30px;
+} */
 .down{
     width: 100%;
     /* height: 500px; */
-    background-color: rgb(73, 73, 162);
+    background-color:#052352;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 .upperPart{
+    padding-top: 40px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -24,28 +37,39 @@
     color: white;
 }
 .buttonsBar{
+    justify-self: center;
+    
     color: white;
-    width: 100%;
+    width: 90%;
     height: 60px;
-    background-color: rgb(35, 35, 86);
+    background-color: #052352;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 .lowerPart{
+    margin-left: 5%;
+    width: 90%;
     display: flex;
     flex-direction: column;
 }
 .button{
     width: 25%;
     height: 100%;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.button:hover{
+    border-bottom:2px solid white;
 }
 .overview{
+    /* background-color: #143E8A; */
+    background:linear-gradient(to bottom right, #143E8A,#072E6A);
     min-height: 400px;
     display: flex;
     align-items: center;
@@ -77,6 +101,7 @@
     height: 40px;
 }
 .resumeSamples{
+    background:linear-gradient(to bottom right, #143E8A,#072E6A);
     width: 100%;
     min-height: 500px;
     display: none;
@@ -91,6 +116,7 @@
     background-color: white;
 }
 .showCompanies{
+    background:linear-gradient(to bottom right, #143E8A,#072E6A);
     display: none;
     align-items: center;
     gap: 30px;
@@ -114,6 +140,7 @@
     height: 150px;
 }
 .reviews{
+    background:linear-gradient(to bottom right, #143E8A,#072E6A);
     display: none;
     align-items: center;
     justify-content: center;

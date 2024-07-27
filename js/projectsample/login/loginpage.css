@@ -8,7 +8,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(14, 170, 255);
+    background-color: #3BC2FA;
+    /* background: linear-gradient(#e0e1dd,#778da9,#1b263b,#415a77,#0d1b2a); */
     font-family: mont;
 }
 @font-face {
@@ -17,7 +18,7 @@ body{
 }
 
 .loginBlock{
-    background-color: rgb(100, 100, 100);
+    background-color: #414042;
     width: 800px;
     height: 350px;
     display: flex;
@@ -42,7 +43,8 @@ body{
     width: 180px;
     height: 40px;
     font-size: 18px;
-    background-color: rgb(14, 170, 255);
+    background-color: #6FB4CD;
+    /* background: radial-gradient(#e0e1dd,#0d1b2a); */
     color: white;
 }
 .logInForm{
@@ -60,7 +62,7 @@ body{
     width: 180px;
     height: 40px;
     font-size: 18px;
-    background-color: rgb(14, 170, 255);
+    background-color: #6FB4CD;
     color: white;
 }
 .form{

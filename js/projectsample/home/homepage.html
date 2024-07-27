@@ -6,6 +6,7 @@
 	<title></title>
 	<link rel="stylesheet" href="homepage.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 	<body>
@@ -38,10 +39,10 @@
 			</nav>  
 				<div class="homesecondpage">
 					<div class="homepagecotation">
-					<div class="cotation">Let your Resume reflects the best version of you! </div>
+					<div class="cotation">A well-crafted resume is your ticket to the career of your dreams.</div>
 					<div class="buttons">
-						<div class="homepageseepreview">see preview</div>
-						<div class="homepagegetstarted">get started</div>
+						<div class="homepageseepreview"><a href="#down">See Preview</a> &nbsp; <i class="fa-solid fa-angles-down" style="color: white;"></i></div>
+						<div class="homepagegetstarted"><a href="../form/70lines.html">Get Started</a>  &nbsp; <i class="fa-solid fa-angles-right" style="color: white;"></i></div>
 					</div>
 					</div>
 					<div class="homepageimage">
@@ -58,13 +59,15 @@
 						<div class="accounts" onclick="logout(this)">Accounts
 							<div class="logoutchild">
 								<div class="logoutrollno" id="userLogin">23A95A6113</div>
-								<div class="logoutbutton"><a href="">Login</a></div>
+								<div class="logoutbutton"><a href="../login/loginpage.html">Logout</a></div>
 							</div>
 						</div> 
 					</div>
 					</div>
 				</div>
 		</div>
+		<div class="upDivider"></div>
+		<div class="downDivider"></div>
 		<div class="down" id="down">
 			<div class="upperPart" id="upperPart">
 				<div class="content1" id="content1">
@@ -77,7 +80,7 @@
 			</div>
 			<div class="lowerPart" id="lowerPart">
 				<div class="buttonsBar" id="buttonsBar">
-					<div class="button" id="button1" onclick="showOverview()">How to Use</div>
+					<div class="button" id="button1" onclick="showOverview()" style="background-color: #143E8A;">How to Use</div>
 					<div class="button" id="button2" onclick="showResumeSample()">Resume Samples</div>
 					<div class="button" id="button3" onclick="showCompanies()">Companies</div>
 					<div class="button" id="button4" onclick="showReviews()">Reviews</div>
@@ -91,7 +94,7 @@
 						<div class="innerSteps">Step 2</div>
 						<div class="innerSteps">Step 3</div>
 						<div class="innerSteps">Step 4</div>
-						<div class="buildResume" id="buildResume">Build Resume >></div>
+						<div class="buildResume" id="buildResume">Build Resume &nbsp; <i class="fa-solid fa-angles-right" style="color: white;"></i></div>
 					</div>
 				</div>
 				<div class="resumeSamples" id="resumeSamples">

@@ -33,12 +33,6 @@
 		animation-range-start: 80vh;
 		animation-range-end: 100vh;
 	}
-	/* nav:after {
-		animation: appear linear both;
-		animation-timeline: view();
-		animation-range-start: 60vh;
-		animation-range-end: 100vh;
-	} */
 	.logo {
 		animation: zoom-out linear both;
 		animation-timeline: view();
@@ -60,7 +54,7 @@ body
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1rem;
 	margin: 0;
-	background-color:#EFEFEF;
+	background-color:#890c0c;
 	color:black;
 	display: flex;
 	flex-direction: column;
@@ -170,6 +164,7 @@ nav ul li
 }
 .cotation 
 {
+	color: white;
 	height: 150px;
 	width: 500px;
 	position: absolute;
@@ -220,12 +215,13 @@ nav ul li
 	height: 400px;
 	max-height: fit-content;
 	width:400px;
-	background-image: url("../Assests/sample2.png");
+	background-image: url("../Assests/resumesLogo.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
 a
 {
+	color: white;
 	text-decoration: none;
 }
 .logo

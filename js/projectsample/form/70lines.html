@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./70lines.css">
+  <style>
+  
+  </style>
+       
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="left_side_div">
+                <div class="button1" onclick="showBox(1)">1</div>
+                <div class="button1" onclick="showBox(2)">2</div>
+                <div class="button1" onclick="showBox(3)">3</div>
+                <div class="button1" onclick="showBox(4)">4</div>
+                <div class="button1" onclick="showBox(5)">5</div>
+                <div class="progress-container">
+                    <div id="progress-bar" class="progress"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="right">
+            <div class="box">
+                <div id="box1-1" class="box1">
+                    <div id="personal_details">
+                        <h1><center>Personal Details</center></h1>
+                        <label>Name:</label>
+                        <input id="personal_details_name" type="text" value="" name="personal_details_name"  placeholder="Enter your Full Name"><br><br>
+                        <label >Phone Number:</label>
+                        <input id="personal_details_phonenumber" type="text" value="" name="personal_details_phonenumber" placeholder="Phone Number">
+                        <label for="personal_details_Email">Email:</label>
+                        <input id="personal_details_Email" type="text" name="personal_details_Email" placeholder="Enter Email"><br><br>
+                        <label for="personal_details_country">Country:</label>
+                        <input id="personal_details_country" type="text" name="personal_details_country" placeholder="Enter Country">
+                        <label for="personal_details_city">City:</label>
+                        <input id="personal_details_city" type="text" name="personal_details_city" placeholder="Enter City"><br><br>
+                        <label for="personal_details_pincode">Pincode:</label>
+                        <input id="personal_details_pincode" type="text" name="personal_details_pincode" placeholder="Enter Pincode"><br><br>
+                        <label for="personal_details_textarea">Additional Information:</label>
+                        <textarea id="personal_details_textarea" placeholder="Enter additional information here"></textarea>
+                    </div>
+
+                    <div class="next">
+                        <button id="next_Set" class="next3" onclick="nextBox()">NEXT</button>
+                    </div>
+                </div>
+                <div id="box1-2" class="box2">
+                    <div id="education_details">
+                        <h4>EDUCATIONAL DETAILS</h4>
+                        <label for="collage_name1">University/College:</label>
+                        <input id="collage_name1" type="text" name="collage_name" placeholder="University/College name" class="full-width"><br><br>
+                        <label for="collage_location1">Location:</label>
+                        <input id="collage_location1" type="text" name="collage_location" placeholder="University/College location">
+                        <label for="collage_GPA1">GPA:</label>
+                        <input id="collage_GPA1" type="text" name="collage_GPA" placeholder="Enter GPA Secured">
+                        <label for="collage_branch1">Branch:</label>
+                        <input id="collage_branch1" type="text" name="collage_branch" placeholder="College Branch">
+                        <label for="collage_start1">Starting:</label>
+                        <input id="collage_start1" type="text" name="collage_start" placeholder="Starting Date">
+                        <label for="collage_end1">Ending:</label>
+                        <input id="collage_end1" type="text" name="collage_end" placeholder="Ending Date">
+                
+                        <h3>Intermediate Or Diploma</h3>
+                        <label for="collage_name2">College:</label>
+                        <input id="collage_name2" type="text" name="collage_name" placeholder="College name" class="full-width"><br><br>
+                        <label for="collage_location2">Location:</label>
+                        <input id="collage_location2" type="text" name="collage_location" placeholder="College location">
+                        <label for="collage_GPA2">GPA:</label>
+                        <input id="collage_GPA2" type="text" name="collage_GPA" placeholder="Enter GPA Secured">
+                        <label for="collage_branch2">Degree:</label>
+                        <input id="collage_branch2" type="text" name="collage_branch" placeholder="College Branch">
+                        <label for="collage_start2">Starting:</label>
+                        <input id="collage_start2" type="text" name="collage_start" placeholder="Starting Date">
+                        <label for="collage_end2">Ending:</label>
+                        <input id="collage_end2" type="text" name="collage_end" placeholder="Ending Date">
+                
+                        <h3>SSC</h3>
+                        <label for="school_name">School:</label>
+                        <input id="school_name" type="text" name="school_name" placeholder="School Name" class="full-width"><br><br>
+                        <label for="school_location3">Location:</label>
+                        <input id="school_location3" type="text" name="school_location" placeholder="School location">
+                        <label for="school_GPA2">GPA:</label>
+                        <input id="school_GPA2" type="text" name="school_GPA" placeholder="Enter GPA Secured">
+                        <label for="school_board2">Board Of Education:</label>
+                        <input id="school_board2" type="text" name="school_branch" placeholder="Board Of Education" class="full-width"><br><br>
+                        <label for="school_start2">Starting:</label>
+                        <input id="school_start2" type="text" name="school_start" placeholder="Starting Date">
+                        <label for="school_end2">Ending:</label>
+                        <input id="school_end2" type="text" name="school_end" placeholder="Ending Date">
+                    </div>
+
+
+
+                    <div class="next_previous">
+                        <button id="next_Set" class="next2" onclick="prevBox()">PREVIOUS</button>
+                        <button id="next_Set" class="next3" onclick="nextBox()">NEXT</button>
+                    </div>
+                </div>
+                <div id="box1-3" class="box3">
+                    <div id="Main12">
+                        <div id="profile">
+                            <h1>Profile</h1>
+                            <label for="profile_github">Github:</label>
+                            <input id="profile_github" type="text" name="github" placeholder="Github Link">
+                            <label for="profile_linkedin">LinkedIn:</label>
+                            <input id="profile_linkedin" type="text" name="linkedin" placeholder="LinkedIn Link">
+                            <label for="profile_hacker_rank">Hacker Rank:</label>
+                            <input id="profile_hacker_rank" type="text" name="hacker_rank" placeholder="Hacker Rank Link">
+                            <label for="profile_code_chef">Code Chef:</label>
+                            <input id="profile_code_chef" type="text" name="code_chef" placeholder="Code Chef Link">
+                            <label for="profile_leet_code">Leet Code:</label>
+                            <input id="profile_leet_code" type="text" name="leet_code" placeholder="Leet Code Link">
+                            <label for="profile_geeks_for_geeks">GFG:</label>
+                            <input id="profile_geeks_for_geeks" type="text" name="geeks_for_geeks" placeholder="Geeks For Geeks Link">
+                        </div>
+                
+                        <div id="project">
+                            <h3>Project 1</h3>
+                            <label for="project_name1">Name:</label>
+                            <input id="project_name1" type="text" name="name" placeholder="Project name">
+                            <label for="project_start1">Start:</label>
+                            <input id="project_start1" type="text" name="start" placeholder="Starting date">
+                            <label for="project_end1">End:</label>
+                            <input id="project_end1" type="text" name="end" placeholder="Ending date">
+                            <label for="project_role1">Role:</label>
+                            <input id="project_role1" type="text" name="role" placeholder="What is your role in the project">
+                            <label for="project_description1">Description:</label>
+                            <textarea id="project_description1" name="description" placeholder="Description"></textarea>
+                
+                            <h3>Project 2</h3>
+                            <label for="project_name2">Name:</label>
+                            <input id="project_name2" type="text" name="name" placeholder="Project name">
+                            <label for="project_start2">Start:</label>
+                            <input id="project_start2" type="text" name="start" placeholder="Starting date">
+                            <label for="project_end2">End:</label>
+                        
+                
+                            <input id="project_end2" type="text" name="end" placeholder="Ending date"><br><br>
+                            <label for="project_role2">Role:</label>
+                            <input id="project_role2" type="text" name="role" placeholder="What is your role in the project"><br><br>
+                            <label for="project_description2">Description:</label>
+                            <textarea id="project_description2" name="description" placeholder="Description"></textarea>
+                        </div>
+                    </div>
+                    <div class="next_previous">
+                        <button id="next_Set" class="next2" onclick="prevBox()">PREVIOUS</button>
+                        <button id="next_Set" class="next3" onclick="nextBox()">NEXT</button>
+                    </div>
+                </div>
+                <div id="box1-4" class="box4">
+                    <div id="achievement">
+                        <h1>My Achievements</h1>
+                        <div id="achievement_badge">
+                            <h2>Badges</h2>
+                            <label for="achievement_badge1">Badge 1:</label>
+                            <input id="achievement_badge1" type="text" name="badge" placeholder="Enter your badge 1">
+                            <label for="achievement_badge2">Badge 2:</label>
+                            <input id="achievement_badge2" type="text" name="badge" placeholder="Enter your badge 2">
+                            <label for="achievement_badge3">Badge 3:</label>
+                            <input id="achievement_badge3" type="text" name="badge" placeholder="Enter your badge 3">
+                            <h2>Coding Profiles</h2>
+                            <label for="achievement_coding_profile1">Leetcode:</label>
+                            <input id="achievement_coding_profile1" type="text" name="coding_profile" placeholder="Number of problems">
+                            <label for="achievement_coding_profile2">Codechef:</label>
+                            <input id="achievement_coding_profile2" type="text" name="coding_profile" placeholder="Number of problems">
+                            <label for="achievement_coding_profile3">Codeforces:</label>
+                            <input id="achievement_coding_profile3" type="text" name="coding_profile" placeholder="Number of problems">
+                            <label for="achievement_coding_profile4">Geeks for Geeks:</label>
+                            <input id="achievement_coding_profile4" type="text" name="coding_profile" placeholder="Number of problems">
+                            <h2>Hackathons/Others</h2>
+                            <label for="achievement_hackathon">Hackathon Name:</label>
+                            <input id="achievement_hackathon" type="text" name="hackathon" placeholder="Hackathon Name">
+                        </div>
+                        
+                    </div>
+                    <div class="next_previous">
+                        <button id="next_Set" class="next2" onclick="prevBox()">PREVIOUS</button>
+                        <button id="next_Set" class="next3" onclick="nextBox()">NEXT</button>
+                    </div>
+                </div>
+                <div id="box1-5" class="box5">
+                    <div id="internship">
+                        <center><h1>Internship 1</h1></center>
+                        <label for="internship_name1">Name:</label>
+                        <input id="internship_name1" type="text" name="name" placeholder="Enter your Internship name">
+                        <label for="internship_start1">Start:</label>
+                        <input id="internship_start1" type="text" name="start" placeholder="Starting date">
+                        <label for="internship_end1">End:</label>
+                        <input id="internship_end1" type="text" name="end" placeholder="Ending date"><br><br>
+                        <label for="internship_role1">Role:</label>
+                        <input id="internship_role1" type="text" name="role" placeholder="What is your role in the company"><br><br>
+                        <center>Description</center>
+                        <textarea id="internship_description1" name="description" placeholder="Enter your description"></textarea><br><br>
+                    
+                        <center><h1>Internship 2</h1></center>
+                        <label for="internship_name2">Name:</label>
+                        <input id="internship_name2" type="text" name="name" placeholder="Enter your Internship name">
+                        <label for="internship_start2">Start:</label>
+                        <input id="internship_start2" type="text" name="start" placeholder="Starting date">
+                        <label for="internship_end2">End:</label>
+                        <input id="internship_end2" type="text" name="end" placeholder="Ending date"><br><br>
+                        <label for="internship_role2">Role:</label>
+                        <input id="internship_role2" type="text" name="role" placeholder="What is your role in the company"><br><br>
+                        <center>Description</center>
+                        <textarea id="internship_description2" name="description" placeholder="Enter your description"></textarea>
+                    </div>
+                    <div class="previous_template">
+                        <button id="next_Set" class="next2" onclick="prevBox()">PREVIOUS</button>
+                        <button id="next_Set" class="next5" onclick="chooseTemplate()">TEMPLATE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./70lines.js"></script>
+    <script >
+         
+    </script>
+</body>
+</html>
