@@ -108,7 +108,7 @@ function showBox(number) {
     personal_details[5] = personal_details_pincode.value;
     // console.log(personal_details);
 
-    localStorage.setItem("personal_details", JSON.stringify(personal_details));
+    // localStorage.setItem("personal_details", JSON.stringify(personal_details));
 
     education_details[0][0] = collage_name1.value;
     education_details[0][1] = collage_location1.value;
@@ -131,7 +131,7 @@ function showBox(number) {
     education_details[2][4] = collage_start3.value;
     education_details[2][5] = collage_end3.value;
 
-    localStorage.setItem("education_details",JSON.stringify(education_details));
+    // localStorage.setItem("education_details",JSON.stringify(education_details));
 
     profiles[0] = profileLinkedIn.value;
     profiles[1] = profileGithub.value;
@@ -181,7 +181,7 @@ function showBox(number) {
     internships[1][2] = internship_end2.value;
     internships[1][3] = internship_role2.value;
     internships[1][4] = internship_description2.value;
-    // localStorage.setItem("internships",JSON.stringify(internships));
+    localStorage.setItem("internships",JSON.stringify(internships));
 }
 
 function nextBox() {

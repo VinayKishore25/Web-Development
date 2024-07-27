@@ -8,7 +8,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3BC2FA;
+    /* background-color: #3BC2FA; */
+    background: radial-gradient(#5774A0,#3D5177);
     /* background: linear-gradient(#e0e1dd,#778da9,#1b263b,#415a77,#0d1b2a); */
     font-family: mont;
 }
@@ -18,7 +19,8 @@ body{
 }
 
 .loginBlock{
-    background-color: #414042;
+    /* background-color: #414042; */
+    background-color:#6FB4CD ;
     width: 800px;
     height: 350px;
     display: flex;
@@ -71,8 +73,9 @@ body{
     left:53%;
     width: 350px;
     height: 450px;
-    border: 2px solid;
-    background-color: white;
+    /* border: 2px so/lid; */
+    /* background-color: white; */
+    background-color:#5774A0 ;
     display: flex;
     flex-direction: column;
     gap: 30px;
