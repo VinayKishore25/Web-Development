@@ -73,6 +73,7 @@ function changeToSignUp() {
 	password.placeholder = "New Password";
 	newInput.setAttribute("placeholder", "Confirm New Password");
 	newInput.setAttribute("id","newPassword");
+	newInput.type = "password";
 	forgetPassword.style.display = "none";
 	signUpButton.style.display = "none";
 	login.style.display = "none";
@@ -97,9 +98,11 @@ function changeToSignUp() {
 			passwordUser.push(password.value);
 			localStorage.setItem("loginDetailsUser", JSON.stringify(loginDetailsUser));
 			localStorage.setItem("passwordUser", JSON.stringify(passwordUser));
-			
+			changeToUser();
 		}
-		changeToUser();
+		else{
+			alert("Check the Password");
+		}
 	}
  }
 function resetPassword() 

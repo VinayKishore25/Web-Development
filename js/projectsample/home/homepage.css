@@ -248,7 +248,7 @@ i
 }
 .animated_div 
 {
-	height:600px;
+	height:200px;
 	width: 0;
 	background-color:#B5C0D0;
 	position:fixed;
@@ -275,9 +275,9 @@ i
 }
 .animated_div2
 {
-	height:400px;
+	height:100px;
 	width:0px;
-	background-color: rgba(128, 128, 128, 0.5);
+	background-color:#3D5177;
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -296,9 +296,11 @@ i
 }
 .logoutchild
 {
+	color: white;
 	height: 80px;
 	width:200px;
-	background-color: #270949;
+	background-color: transparent;
+	margin-top: 10px;
 	display: none;
 	max-height: 0;
 	opacity: 0;
@@ -313,8 +315,8 @@ i
 {
 	height: 40px;
 	width: 200px;
-	background-color:whitesmoke;
-	/* color: black; */
+	/* background-color:whitesmoke; */
+	
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -323,7 +325,7 @@ i
 {
 	height: 40px;
 	width: 200px;
-	background-color:white;
+	/* background-color:white; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -365,7 +367,7 @@ i
 #menubar {
 	display: none; 
 }
-@media screen and (max-width: 600px) 
+@media screen and (max-width: 800px) 
 {
 	nav{
 		position: sticky;
@@ -432,9 +434,14 @@ i
 }
 .accounts
 {
+	color: white;
 	margin-top: 20px;
 	text-align: center;
 	display: none;
 	transition: all 1s;
 	cursor: pointer;
+}
+.accounts i
+{
+	color: white;
 }

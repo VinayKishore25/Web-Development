@@ -36,7 +36,7 @@ function menuopen(element)
     else 
     {
         animatedDiv2.style.width = '200px';
-        animatedDiv2.style.height = '100svh';
+        animatedDiv2.style.height = '75svh';
         home.style.display="block";
         wrong.style.display="block";
         aboutus.style.display="block";
@@ -69,6 +69,7 @@ function logout(element)
     child.style.display = 'block';
     if(child.classList.contains('show')) 
     {
+        
       child.classList.remove('show');
     } 
     else 
@@ -77,4 +78,6 @@ function logout(element)
     }
 }
 let userLogin = document.getElementById("userLogin");
+let userLogin1 = document.getElementById("userLogin1");
 userLogin.innerHTML = JSON.parse(localStorage.getItem('loggedUser'));
+userLogin1.innerHTML = JSON.parse(localStorage.getItem('loggedUser'));
