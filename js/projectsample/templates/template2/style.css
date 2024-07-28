@@ -405,6 +405,32 @@ button {
     margin-top: 10px;
 }
 
+
+.buttons{
+    width: 210mm;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.choose{
+    background-color: rgb(88, 255, 88);
+    border: none;
+    border-radius: 30px ;
+    color: blue;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+}
+.download{
+    background-color: rgb(88, 255, 88);
+    border: none;
+    border-radius: 30px ;
+    color: blue;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+}
+
 @media screen and (max-width: 600px) {
     .resume {
         width: 100%;

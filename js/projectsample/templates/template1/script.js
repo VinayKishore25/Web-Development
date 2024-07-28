@@ -181,3 +181,6 @@ document.getElementById('download').addEventListener('click', () => {
     html2pdf().from(element).save('Peaky Template 2.pdf');
 });
 
+function choose(){
+    window.location.href = "../../chooseTemplate/Templates.html";
+}

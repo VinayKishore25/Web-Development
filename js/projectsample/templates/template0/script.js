@@ -180,3 +180,7 @@ document.getElementById('download').addEventListener('click', () => {
     const element = document.querySelector('.resumeBody');
     html2pdf().from(element).save('New Aditya.pdf');
 });
+
+function choose(){
+    window.location.href = "../../chooseTemplate/Templates.html";
+}

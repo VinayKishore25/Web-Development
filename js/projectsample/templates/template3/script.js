@@ -180,3 +180,6 @@ document.getElementById('download').addEventListener('click', () => {
     html2pdf().from(element).save('New Aditya.pdf');
 });
 
+function choose(){
+    window.location.href = "../../chooseTemplate/Templates.html";
+}
