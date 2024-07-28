@@ -55,3 +55,53 @@ function showReviews(){
 
 
 }
+var instruction1 = document.getElementById("instruction1");
+var instruction2 = document.getElementById("instruction2");
+var instruction3 = document.getElementById("instruction3");
+var instruction4 = document.getElementById("instruction4");
+var plus1 = document.getElementById("plus1");
+var minus1 = document.getElementById("minus1");
+var plus2 = document.getElementById("plus2");
+var minus2 = document.getElementById("minus2");
+var plus3 = document.getElementById("plus3");
+var minus3 = document.getElementById("minus3");
+var plus4 = document.getElementById("plus4");
+var minus4 = document.getElementById("minus4");
+function instruct1()
+{
+    instruction1.style.display ="block";
+    instruction2.style.display ="none";
+    instruction3.style.display ="none";
+    instruction4.style.display ="none";
+    if(plus1.style.display != "none")
+    {
+        plus1.style.display = "none";
+        minus1.style.display = "block";
+    }
+    else
+    {
+        plus1.style.display = "block";
+        minus1.style.display = "none";
+    }
+}
+function instruct2()
+{
+    instruction2.style.display ="block";
+    instruction1.style.display ="none";
+    instruction3.style.display ="none";
+    instruction4.style.display ="none";
+}
+function instruct3()
+{
+    instruction3.style.display ="block";
+    instruction2.style.display ="none";
+    instruction1.style.display ="none";
+    instruction4.style.display ="none";
+}
+function instruct4()
+{
+    instruction4.style.display ="block";
+    instruction2.style.display ="none";
+    instruction3.style.display ="none";
+    instruction1.style.display ="none";
+}

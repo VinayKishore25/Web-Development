@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
     var personal_details = JSON.parse(localStorage.getItem('personal_details'));
-    var CareerObjectives = JSON.parse(localStorage.getItem('CareerObjectives'));
     var education_details = JSON.parse(localStorage.getItem('education_details'));
     var internship_details = JSON.parse(localStorage.getItem('internships'));
     var skills = JSON.parse(localStorage.getItem('skills'));
@@ -73,7 +72,6 @@ document.addEventListener('DOMContentLoaded', function() {
     skill5.innerHTML = skills[4];
     var skill6 = document.getElementById('skill6');
     skill6.innerHTML = skills[5];
-
 
     //Projects
     var projectName1 = document.getElementById('projectName1');
@@ -178,6 +176,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.getElementById('download').addEventListener('click', () => {
     const element = document.querySelector('.resumeBody');
-    html2pdf().from(element).save('Peaky Template 2.pdf');
+    html2pdf().from(element).save('Peaky Template.pdf');
 });
 

@@ -1,14 +1,9 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     line-height: 1.45;
-}
-
-.underline{
-    border: 1px solid black;
-    width: 90%;
 }
 
 .resume {
@@ -16,7 +11,9 @@ body {
     height: 297mm;
     /* background-color: pink; */
 }
-
+a{
+    text-decoration: none;
+}
 .resumeBody {
     width: 100%;
     height: 100%;
@@ -28,67 +25,45 @@ body {
     gap: 10px;
 }
 
-.resumeHeader{
+.personalDetails {
     width: 95%;
-    height: 10%;
+    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     /* background-color: yellow; */
 }
 
-#name{
-    font-size: 30px;
-}
-
-.resumeMain{
-    width: 95%;
-    height: 90%;
+.personalDetailsUp {
+    width: 100%;
+    height: 50%;
     display: flex;
-    /* background-color: pink; */
-    gap: 5px;
-}
-
-.resumeMainSeperator{
-    height: 100%;
-    width: 2px;
-    background-color: black;
-}
-
-.resumeMainLeft{
-    width: 70%;
-    height: 100%;
-    background-color: lightblue;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: center;
     align-items: center;
-    border-radius: 10px;
 }
 
-.carrerObjective{
-    width: 95%;
-    height: fit-content;
-    /* background-color: lightcoral; */
+#name {
+    font-size: 35px;
+}
+
+.personalDetailsDown {
+    width: 100%;
+    height: 50%;
+    font-size: 13px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    /* justify-content: space-evenly; */
+    align-items: center;
 }
 
-.carrerObjectiveHeading{
-    width: 100%;
-    height: fit-content;
-    font-weight: bold;
-    font-size: 16px;
-    /* background-color: lightgoldenrodyellow; */
+.personalDetailsDown i{
+    /* margin-right: 5px; */
+    margin: auto 5px;
 }
 
-.carrerObjectiveContent{
-    width: 100%;
-    height: fit-content;
-    font-size: 12px;
-    /* background-color: lightgoldenrodyellow; */
+.logo{
+    display: flex;
 }
 
 .educationalDetails {
@@ -97,34 +72,33 @@ body {
     display: flex;
     flex-direction: column;
     /* background-color: pink; */
-    gap: 5px;
+    gap: 10px;
 }
 
 .educationalDetailsHeading {
     width: 100%;
     height: 30px;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 20px;
     /* background-color: #457B98; */
 }
 
 .underline{
     width: 100%;
-    height: 1px;
+    height: 1.5px;
     background-color: black;
 }
 
 .education {
     width: 100%;
     height: fit-content;
-    font-size: 12px;
+    font-size: 13px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* background-color: lightblue; */
 }
 
-.institute {
+#institute1 {
     font-weight: bold;
 }
 
@@ -148,15 +122,14 @@ body {
 .projectHeading {
     width: 100%;
     height: 30px;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 20px;
     /* background-color: #457B98; */
 }
 
 .project {
     width: 100%;
     height: fit-content;
-    font-size: 12px;
+    font-size: 13px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -167,43 +140,12 @@ body {
     font-weight: bold;
 }
 
-.projectDesc{
-    width: 90%;
-}
-
 .projectDuration {
     display: flex;
 }
 
 .projectDuration div {
     margin: 2px;
-}
-
-.achievementsDetails{
-    width: 95%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    /* background-color: pink; */
-    gap: 10px;
-}
-
-.achievementsHeading{
-    width: 100%;
-    height: 30px;
-    font-size: 16px;
-    font-weight: bold;
-    /* background-color: #457B98; */
-}
-
-.achievementsList{
-    width: 100%;
-    height: fit-content;
-    font-size: 12px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* background-color: lightblue; */
 }
 
 .internshipDetails{
@@ -218,8 +160,7 @@ body {
 .internshipHeading{
     width: 100%;
     height: 30px;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 20px;
     /* background-color: #457B98; */
 }
 
@@ -241,76 +182,8 @@ body {
     display: flex;
 }
 
-#internshipDesc1{
-    width: 90%;
-}
-
 .internshipDuration div{
     margin: 2px;
-}
-
-
-.resumeMainRight{
-    width: 30%;
-    height: 100%;
-    background-color: lightcoral;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    border-radius: 15px;
-}
-
-.personalDetails{
-    width: 90%;
-    height: fit-content;
-    /* background-color: lightgreen; */
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.personalDetailsHeading{
-    width: 100%;
-    height: fit-content;
-    font-weight: bold;
-    font-size: 16px;
-    /* background-color: lightgoldenrodyellow; */
-}
-
-.personalDetailsContent{
-    width: 100%;
-    height: fit-content;
-    font-size: 12px;
-    text-align: start;
-    display: flex;
-    flex-direction: column;
-    /* background-color: lightgoldenrodyellow; */
-}
-
-.skills{
-    width: 90%;
-    height: fit-content;
-    /* background-color: lightgreen; */
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.skillsHeading{
-    width: 100%;
-    height: fit-content;
-    font-weight: bold;
-    font-size: 16px;
-    /* background-color: lightgoldenrodyellow; */
-}
-
-.skillsContent{
-    width: 100%;
-    height: fit-content;
-    font-size: 12px;
-    text-align: start;
-    /* background-color: lightgoldenrodyellow; */
 }
 
 .profileDetails{
@@ -325,17 +198,69 @@ body {
 .profileHeading{
     width: 100%;
     height: 30px;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 20px;
     /* background-color: #457B98; */
 }
 
 .profileList{
     width: 100%;
     height: fit-content;
-    font-size: 12px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: lightblue; */
+}
+
+.skillDetails{
+    width: 95%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
+    /* background-color: pink; */
+    gap: 10px;
+}
+
+.skillsHeading{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    /* background-color: #457B98; */
+}
+
+.skillList{
+    width: 100%;
+    height: fit-content;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: lightblue; */
+}
+
+.achievementsDetails{
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    gap: 10px;
+}
+
+.achievementsHeading{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    /* background-color: #457B98; */
+}
+
+.achievementsList{
+    width: 100%;
+    height: fit-content;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     /* background-color: lightblue; */
 }
 
@@ -351,8 +276,7 @@ body {
 .hobbiesHeading{
     width: 100%;
     height: 30px;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 20px;
     /* background-color: #457B98; */
 }
 
@@ -361,7 +285,8 @@ body {
     height: fit-content;
     font-size: 12px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     /* background-color: lightblue; */
 }
 
@@ -377,8 +302,7 @@ body {
 .languagesHeading{
     width: 100%;
     height: 30px;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 20px;
     /* background-color: #457B98; */
 }
 
@@ -387,31 +311,16 @@ body {
     height: fit-content;
     font-size: 12px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     /* background-color: lightblue; */
 }
 
-button {
-    width: 150px;
-    height: 50px;
-    background-color: cadetblue;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
-    margin-top: 10px;
-}
+
 
 @media screen and (max-width: 600px) {
     .resume {
         width: 100%;
         height: 100%;
-    }
-
-    .personalDetailsContent{
-        flex-wrap: wrap;
-        width: 50%;
-        font-size: 10px;
     }
 }

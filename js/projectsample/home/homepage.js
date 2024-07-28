@@ -36,7 +36,7 @@ function menuopen(element)
     else 
     {
         animatedDiv2.style.width = '200px';
-        animatedDiv2.style.height = '75svh';
+        animatedDiv2.style.height = '450px';
         home.style.display="block";
         wrong.style.display="block";
         aboutus.style.display="block";

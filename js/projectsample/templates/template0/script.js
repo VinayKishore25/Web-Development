@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var achievements = JSON.parse(localStorage.getItem('achievements'));
     var hobbies = JSON.parse(localStorage.getItem('hobbies'));
     var languages = JSON.parse(localStorage.getItem('languages'));
-
+    console.log(personal_details);
+    console.log(education_details);
     //Personal Details
     var name = document.getElementById('name');
     name.innerHTML = personal_details[0];
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var location1 = document.getElementById('location1');
     location1.innerHTML = education_details[0][1];
     var cgpa1 = document.getElementById('cgpa1');
-    cgpa1.innerHTML = "CGPA : "+education_details[0][2]
+    cgpa1.innerHTML = education_details[0][2]
     var degree1 = document.getElementById('degree1');
     degree1.innerHTML = education_details[0][3];
     var startYear1 = document.getElementById('startYear1');
@@ -39,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var location2 = document.getElementById('location2');
     location2.innerHTML = education_details[1][1];
     var cgpa2 = document.getElementById('cgpa2');
-    cgpa2.innerHTML = "CGPA : "+education_details[1][2]
+    cgpa2.innerHTML = education_details[1][2]
     var degree2 = document.getElementById('degree2');
     degree2.innerHTML = education_details[1][3];
     var startYear2 = document.getElementById('startYear2');
@@ -52,13 +53,36 @@ document.addEventListener('DOMContentLoaded', function() {
     var location3 = document.getElementById('location3');
     location3.innerHTML = education_details[2][1];
     var cgpa3 = document.getElementById('cgpa3');
-    cgpa3.innerHTML = 'CGPA : '+education_details[2][2]
+    cgpa3.innerHTML = education_details[2][2]
     var degree3 = document.getElementById('degree3');
     degree3.innerHTML = education_details[2][3];
     var startYear3 = document.getElementById('startYear3');
     startYear3.innerHTML = education_details[2][4];
     var endYear3 = document.getElementById('endYear3');
     endYear3.innerHTML = education_details[2][5];
+
+    //Internship Details
+    var internshipName1 = document.getElementById('internshipName1');
+    internshipName1.innerHTML = internship_details[0][0];
+    var internshipStartYear1 = document.getElementById('internshipStartYear1');
+    internshipStartYear1.innerHTML = internship_details[0][1];
+    var internshipEndYear1 = document.getElementById('internshipEndYear1');
+    internshipEndYear1.innerHTML = internship_details[0][2];
+    var internshipRole1 = document.getElementById('internshipRole1');
+    internshipRole1.innerHTML = internship_details[0][3];
+    var internshipDesc1 = document.getElementById('internshipDesc1');
+    internshipDesc1.innerHTML = internship_details[0][4];
+
+    var internshipName2 = document.getElementById('internshipName2');
+    internshipName2.innerHTML = internship_details[1][0];
+    var internshipStartYear2 = document.getElementById('internshipStartYear2');
+    internshipStartYear2.innerHTML = internship_details[1][1];
+    var internshipEndYear2 = document.getElementById('internshipEndYear2');
+    internshipEndYear2.innerHTML = internship_details[1][2];
+    var internshipRole2 = document.getElementById('internshipRole2');
+    internshipRole2.innerHTML = internship_details[1][3];
+    var internshipDesc2 = document.getElementById('internshipDesc2');
+    internshipDesc2.innerHTML = internship_details[1][4];
 
     //Skills
     var skill1 = document.getElementById('skill1');
@@ -74,6 +98,19 @@ document.addEventListener('DOMContentLoaded', function() {
     var skill6 = document.getElementById('skill6');
     skill6.innerHTML = skills[5];
 
+    //Profiles
+    var profile1 = document.getElementById('profile1');
+    profile1.innerHTML = profiles[0];
+    var profile2 = document.getElementById('profile2');
+    profile2.href = profiles[1];
+    var profile3 = document.getElementById('profile3');
+    profile3.innerHTML = profiles[2];
+    var profile4 = document.getElementById('profile4');
+    profile4.innerHTML = profiles[3];
+    var profile5 = document.getElementById('profile5');
+    profile5.innerHTML = profiles[4];
+    var profile6 = document.getElementById('profile6');
+    profile6.innerHTML = profiles[5];
 
     //Projects
     var projectName1 = document.getElementById('projectName1');
@@ -98,20 +135,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var projectDesc2 = document.getElementById('projectDesc2');
     projectDesc2.innerHTML = projects[1][4];
 
-    //Profiles
-    var profile1 = document.getElementById('profile1');
-    profile1.innerHTML = profiles[0];
-    var profile2 = document.getElementById('profile2');
-    profile2.innerHTML = profiles[1];
-    var profile3 = document.getElementById('profile3');
-    profile3.innerHTML = profiles[2];
-    var profile4 = document.getElementById('profile4');
-    profile4.innerHTML = profiles[3];
-    var profile5 = document.getElementById('profile5');
-    profile5.innerHTML = profiles[4];
-    var profile6 = document.getElementById('profile6');
-    profile6.innerHTML = profiles[5];
-
     //Achievements
     var badge1 = document.getElementById('badge1');
     badge1.innerHTML = achievements[0][0];
@@ -134,29 +157,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var hackathon3 = document.getElementById('hackathon3');
     hackathon3.innerHTML = achievements[2][2];
 
-    //Internship Details
-    var internshipName1 = document.getElementById('internshipName1');
-    internshipName1.innerHTML = internship_details[0][0];
-    var internshipStartYear1 = document.getElementById('internshipStartYear1');
-    internshipStartYear1.innerHTML = internship_details[0][1];
-    var internshipEndYear1 = document.getElementById('internshipEndYear1');
-    internshipEndYear1.innerHTML = internship_details[0][2];
-    var internshipRole1 = document.getElementById('internshipRole1');
-    internshipRole1.innerHTML = internship_details[0][3];
-    var internshipDesc1 = document.getElementById('internshipDesc1');
-    internshipDesc1.innerHTML = internship_details[0][4];
-
-    // var internshipName2 = document.getElementById('internshipName2');
-    // internshipName2.innerHTML = internship_details[1][0];
-    // var internshipStartYear2 = document.getElementById('internshipStartYear2');
-    // internshipStartYear2.innerHTML = internship_details[1][1];
-    // var internshipEndYear2 = document.getElementById('internshipEndYear2');
-    // internshipEndYear2.innerHTML = internship_details[1][2];
-    // var internshipRole2 = document.getElementById('internshipRole2');
-    // internshipRole2.innerHTML = internship_details[1][3];
-    // var internshipDesc2 = document.getElementById('internshipDesc2');
-    // internshipDesc2.innerHTML = internship_details[1][4];
-
     //Hobbies
     var hobby1 = document.getElementById('hobby1');
     hobby1.innerHTML = hobbies[0];
@@ -178,6 +178,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.getElementById('download').addEventListener('click', () => {
     const element = document.querySelector('.resumeBody');
-    html2pdf().from(element).save('Peaky Template 2.pdf');
+    html2pdf().from(element).save('New Aditya.pdf');
 });
-

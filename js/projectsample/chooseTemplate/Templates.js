@@ -8,7 +8,7 @@ function updateCards() {
         let apply = document.getElementById("choose");
         apply.onclick = null;
         apply.onclick = function(){
-            window.location.href = `../templates/template${currentIndex}/index1.html`
+            window.location.href = `../templates/template${currentIndex}/index.html`
         };
     });
 }
