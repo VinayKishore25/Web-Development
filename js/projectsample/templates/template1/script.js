@@ -173,6 +173,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var language3 = document.getElementById('language3');
     language3.innerHTML = languages[2];
 
+    var carrerObjectiveContent = document.getElementById("carrerObjectiveContent");
+    carrerObjectiveContent.innerHTML = CareerObjectives[Math.floor(Math.random()*50)];
 });
 
 

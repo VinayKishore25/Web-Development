@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     var personal_details = JSON.parse(localStorage.getItem('personal_details'));
+    var CareerObjectives = JSON.parse(localStorage.getItem('CareerObjectives'));
     var education_details = JSON.parse(localStorage.getItem('education_details'));
     var internship_details = JSON.parse(localStorage.getItem('internships'));
     var skills = JSON.parse(localStorage.getItem('skills'));
@@ -171,6 +172,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var language3 = document.getElementById('language3');
     language3.innerHTML = languages[2];
 
+    var carrerObjectiveContent = document.getElementById("carrerObjectiveContent");
+    carrerObjectiveContent.innerHTML = CareerObjectives[Math.floor(Math.random()*50)];
 });
 
 

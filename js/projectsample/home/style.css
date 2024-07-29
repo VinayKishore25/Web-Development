@@ -77,6 +77,10 @@
     flex-direction: column;
     gap: 30px;
 }
+.steps a{
+    text-decoration: none;
+    color: none;
+}
 .innerSteps i{
     color: grey;
 }

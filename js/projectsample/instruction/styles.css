@@ -58,6 +58,10 @@ body{
 	margin: auto;
 	font-size: 1.3vmax;
 }
+a{
+	text-decoration: none;
+	color: white;
+}
 .btn{
 	width: 100%;
 	height: 30%;
