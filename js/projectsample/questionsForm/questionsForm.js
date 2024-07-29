@@ -379,7 +379,7 @@ function chooseTemplate() {
     localStorage.setItem("internships",JSON.stringify(internships));
     localStorage.setItem("hobbies",JSON.stringify(hobbies));
     localStorage.setItem("languages",JSON.stringify(languages));
-    window.location.href = "../chooseTemplate/Templates.html";
+    window.location.href = "../chooseTemplates/Templates.html";
 }
 
 

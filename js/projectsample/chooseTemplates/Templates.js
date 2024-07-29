@@ -4,7 +4,6 @@ let currentIndex = 0;
 function updateCards() {
     document.querySelectorAll('.card img').forEach(cardImg => {
         cardImg.src = images[currentIndex].src;
-        console.log(currentIndex);
         let apply = document.getElementById("choose");
         apply.onclick = null;
         apply.onclick = function(){

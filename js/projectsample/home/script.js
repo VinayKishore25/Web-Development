@@ -105,3 +105,25 @@ function instruct4()
     instruction3.style.display ="none";
     instruction1.style.display ="none";
 }
+function smoothScrollToDown() {
+    event.preventDefault();
+    const downSection = document.getElementById('down');
+    const duration = 850;
+    const start = window.scrollY;
+    const end = downSection.offsetTop;
+    const startTime = performance.now();
+
+    function scroll() {
+        const elapsed = performance.now() - startTime;
+        const progress = elapsed / duration;
+        const position = start + (end - start) * progress;
+
+        window.scrollTo(0, position);
+
+        if (elapsed < duration) {
+            window.requestAnimationFrame(scroll);
+        }
+    }
+
+    window.requestAnimationFrame(scroll);
+};

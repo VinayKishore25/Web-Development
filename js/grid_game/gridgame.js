@@ -28,7 +28,7 @@ function func()
 
 
 
-
+console.log(typeof null);
 
 
 

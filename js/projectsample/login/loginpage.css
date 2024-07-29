@@ -8,9 +8,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #3BC2FA; */
     background: radial-gradient(#5774A0,#3D5177);
-    /* background: linear-gradient(#e0e1dd,#778da9,#1b263b,#415a77,#0d1b2a); */
     font-family: mont;
 }
 @font-face {
@@ -45,9 +43,7 @@ body{
     width: 180px;
     height: 40px;
     font-size: 18px;
-    /* background-color: #3D5177; */
     background: radial-gradient(#5774A0,#3D5177);
-    /* background: radial-gradient(#e0e1dd,#0d1b2a); */
     color: white;
 }
 .logInForm{
@@ -65,7 +61,6 @@ body{
     width: 180px;
     height: 40px;
     font-size: 18px;
-    /* background-color: #3D5177; */
     background: radial-gradient(#5774A0,#3D5177);
 
     color: white;

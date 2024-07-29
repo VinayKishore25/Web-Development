@@ -151,5 +151,5 @@ document.getElementById('download').addEventListener('click', () => {
 });
 
 function choose(){
-    window.location.href = "../../chooseTemplate/Templates.html";
+    window.location.href = "../../chooseTemplates/Templates.html";
 }
