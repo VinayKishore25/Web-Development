@@ -99,17 +99,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //Profiles
     var profile1 = document.getElementById('profile1');
-    profile1.innerHTML = "Linkdein Link : " + profiles[0];
+    profile1.href = profiles[0];
     var profile2 = document.getElementById('profile2');
-    profile2.innerHTML = "GitHub Link : " + profiles[1];
+    profile2.href = profiles[1];
     var profile3 = document.getElementById('profile3');
-    profile3.innerHTML = "Hacker Rank Link : " + profiles[2];
+    profile3.href = profiles[2];
     var profile4 = document.getElementById('profile4');
-    profile4.innerHTML = "Codechef : " + profiles[3];
+    profile4.href = profiles[3];
     var profile5 = document.getElementById('profile5');
-    profile5.innerHTML = "LeetCode : " + profiles[4];
+    profile5.href = profiles[4];
     var profile6 = document.getElementById('profile6');
-    profile6.innerHTML = "Gfg : " + profiles[5];
+    profile6.href = profiles[5];
 
     //Internship Details
     var internshipName1 = document.getElementById('internshipName1');

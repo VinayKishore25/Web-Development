@@ -108,17 +108,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //Profiles
     var profile1 = document.getElementById('profile1');
-    profile1.innerHTML = profiles[0];
+    profile1.href = profiles[0];
     var profile2 = document.getElementById('profile2');
-    profile2.innerHTML = profiles[1];
+    profile2.href = profiles[1];
     var profile3 = document.getElementById('profile3');
-    profile3.innerHTML = profiles[2];
+    profile3.href = profiles[2];
     var profile4 = document.getElementById('profile4');
-    profile4.innerHTML = profiles[3];
+    profile4.href = profiles[3];
     var profile5 = document.getElementById('profile5');
-    profile5.innerHTML = profiles[4];
+    profile5.href = profiles[4];
     var profile6 = document.getElementById('profile6');
-    profile6.innerHTML = profiles[5];
+    profile6.href = profiles[5];
 
     //Skills
     var skill1 = document.getElementById('skill1');

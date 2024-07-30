@@ -134,12 +134,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // hobby3.innerHTML = hobbies[2];
 
     //Languages
-    var language1 = document.getElementById('language1');
-    language1.innerHTML = languages[0];
-    var language2 = document.getElementById('language2');
-    language2.innerHTML = languages[1];
-    var language3 = document.getElementById('language3');
-    language3.innerHTML = languages[2];
+    // var language1 = document.getElementById('language1');
+    // language1.innerHTML = languages[0];
+    // var language2 = document.getElementById('language2');
+    // language2.innerHTML = languages[1];
+    // var language3 = document.getElementById('language3');
+    // language3.innerHTML = languages[2];
 
 });
 

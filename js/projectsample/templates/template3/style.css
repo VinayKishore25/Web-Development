@@ -316,7 +316,6 @@ a{
     /* background-color: lightblue; */
 }
 
-
 .buttons{
     width: 210mm;
     display: flex;
@@ -324,19 +323,19 @@ a{
     justify-content: space-evenly;
 }
 .choose{
-    background-color: rgb(88, 255, 88);
+    background-color: #3D5177;
     border: none;
     border-radius: 30px ;
-    color: blue;
+    color: rgb(255, 255, 255);
     width: 250px;
     height: 50px;
     font-size: 18px;
 }
 .download{
-    background-color: rgb(88, 255, 88);
+    background-color: #3D5177;
     border: none;
     border-radius: 30px ;
-    color: blue;
+    color: rgb(255, 255, 255);
     width: 250px;
     height: 50px;
     font-size: 18px;
@@ -347,4 +346,29 @@ a{
         width: 100%;
         height: 100%;
     }
+    .buttons{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .choose{
+        background-color: #3D5177;
+        border: none;
+        border-radius: 30px ;
+        color: rgb(255, 255, 255);
+        width: 250px;
+        height: 50px;
+        font-size: 18px;
+    }
+    .download{
+        background-color: #3D5177;
+        border: none;
+        border-radius: 30px ;
+        color: rgb(255, 255, 255);
+        width: 250px;
+        height: 50px;
+        font-size: 18px;
+    }
+    
 }

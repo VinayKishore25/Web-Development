@@ -88,9 +88,6 @@ h2{
     flex-direction: column;
     position: relative;
     margin-top: 100px;
-    
-    
-
 }
 .super {
     width: 200px;
@@ -99,14 +96,19 @@ h2{
     border-radius: 50px;
     background-color: whitesmoke;
     text-align: center;
-
-
+}
+.choose{
+    border: none;
+    width: 200px;
+    height: 50px;
+    font-size: x-large;
+    border-radius: 50px;
+    background-color: whitesmoke;
+    text-align: center;
 }
 button:hover{
     cursor: pointer;
-    
 }
-
 @media (max-width: 426px) {
     
     .teja {
@@ -115,15 +117,12 @@ button:hover{
         display:flex;
         justify-content: space-evenly;
         flex-direction:column-reverse ;
-        /* border: 10px solid; */
         row-gap: 150px;
         position: relative;
         top: 29%;
-
     }
     .mid-div-main{
         width: 100%;
-        /* height: 100%; */
     }
     .head {
         width: 100%;
@@ -136,19 +135,14 @@ button:hover{
     h2{
         font-size:large;
     }
-    
     .vertical-div{
         height: 100px;
         width: 100%;
         white-space: nowrap;
-        /* border: 2px solid black; */
         overflow-x: scroll;
-        /* overflow: hidden; */
         flex-direction: row;
         display: flex;
         column-gap: 10px;
-        /* padding: -2%; */
-
     }
     .vertical-div img{
         width: 200px;
@@ -158,7 +152,6 @@ button:hover{
         height: fit-content;
         display: flex;
         flex-direction: column;
-        /* border: 1px solid green; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -169,19 +162,15 @@ button:hover{
     .mid-div1{
         width: 100%;
         height: 80%;
-        
-
     }
     .card {
         width: 300px;
         height: 360px;
-        /* box-shadow: 0px 0px 20px 0 white; */
     }
     img{
         border: 2px solid ;
         width: 220px;
         height: 100px;
-
     }
     .super {
         width: 150px;
@@ -191,5 +180,4 @@ button:hover{
         border-radius: 350px;
         text-align: center;
     }
-   
 }

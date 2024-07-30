@@ -347,7 +347,6 @@ button {
 }
 
 
-
 .buttons{
     width: 210mm;
     display: flex;
@@ -355,24 +354,23 @@ button {
     justify-content: space-evenly;
 }
 .choose{
-    background-color: rgb(88, 255, 88);
+    background-color: #3D5177;
     border: none;
     border-radius: 30px ;
-    color: blue;
+    color: rgb(255, 255, 255);
     width: 250px;
     height: 50px;
     font-size: 18px;
 }
 .download{
-    background-color: rgb(88, 255, 88);
+    background-color: #3D5177;
     border: none;
     border-radius: 30px ;
-    color: blue;
+    color: rgb(255, 255, 255);
     width: 250px;
     height: 50px;
     font-size: 18px;
 }
-
 
 
 @media screen and (max-width: 600px) {
@@ -445,6 +443,30 @@ button {
 
     .projectRight{
         width: 25%;
+    }
+    .buttons{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .choose{
+        background-color: #3D5177;
+        border: none;
+        border-radius: 30px ;
+        color: rgb(255, 255, 255);
+        width: 250px;
+        height: 50px;
+        font-size: 18px;
+    }
+    .download{
+        background-color: #3D5177;
+        border: none;
+        border-radius: 30px ;
+        color: rgb(255, 255, 255);
+        width: 250px;
+        height: 50px;
+        font-size: 18px;
     }
 }
 
