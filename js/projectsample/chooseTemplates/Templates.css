@@ -6,7 +6,8 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: dimgray;
+    background:radial-gradient(#5774A0,#3D5177);
+    /* background-color: dimgray; */
     overflow: hidden;
 }
 

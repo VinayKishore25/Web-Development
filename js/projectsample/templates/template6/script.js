@@ -1,12 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
     var personal_details = JSON.parse(localStorage.getItem('personal_details'));
-    var carrerObjectives = JSON.parse(localStorage.getItem('carrerObjectives'));
+    var CareerObjectives = JSON.parse(localStorage.getItem('CareerObjectives'));
     var education_details = JSON.parse(localStorage.getItem('education_details'));
     var internship_details = JSON.parse(localStorage.getItem('internships'));
     var skills = JSON.parse(localStorage.getItem('skills'));
     var profiles = JSON.parse(localStorage.getItem('profiles'));
     var projects = JSON.parse(localStorage.getItem('projects'));
     var achievements = JSON.parse(localStorage.getItem('achievements'));
+    var hobbies = JSON.parse(localStorage.getItem('hobbies'));
+    var languages = JSON.parse(localStorage.getItem('languages'));
 
     //Personal Details
     var name = document.getElementById('name');
@@ -23,9 +25,9 @@ document.addEventListener('DOMContentLoaded', function () {
     pincode.innerHTML = ", " + personal_details[5];
 
     //Carrer Objectives
-    var carrerObjectiveContent = document.getElementById('carrerObjectiveContent');
-    carrerObjectiveContent.innerHTML = carrerObjectives[Math.floor(Math.random() * 50)];
-    console.log(carrerObjectives);
+    var careerObjectiveContent = document.getElementById('carrerObjectiveContent');
+    careerObjectiveContent.innerHTML = CareerObjectives[Math.floor(Math.random() * 50)];
+    // console.log(carrerObjectives);
 
     //Skills
     var skill1 = document.getElementById('skill1');

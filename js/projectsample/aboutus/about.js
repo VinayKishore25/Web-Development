@@ -95,7 +95,7 @@ Supriya=()=>{
         let img = document.getElementById("leftimage");
         img.style.opacity = '1';
         img.style.transition = 'all 0.5s ease';
-        img.src = "../Assests/logo.png";
+        img.src = "../Assests/supriya.jpg";
         let md = document.getElementById("memberdesignation");
         md.innerHTML="Team Member";
         md.style.transition = 'all 0.5s ease';

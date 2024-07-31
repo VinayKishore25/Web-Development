@@ -1,6 +1,6 @@
 
 html, body {
-    background-color:gray;
+    background:radial-gradient(#5774A0,#3D5177);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
