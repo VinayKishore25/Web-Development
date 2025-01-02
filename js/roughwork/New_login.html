@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./New_login.css" >
+    </head>
+    <body>
+        <div class="Out_div">
+            <div class="Content_1">
+                <div>You are attempting to log into the Resume Builder Portal as a User</div>
+                <button onclick="ChangetoAdmin()">Change to Admin</button>
+            </div>
+            <div class="Content_2">
+            <div> You are attempting to log into the Resume Builder Portal as a Admin</div>
+                <button onclick="ChangetoUser()">Change to User</button>
+            </div>
+            <div class="Moving_forms">
+                <div class="User_login">
+                    <div class="heading">Login Form</div>
+                    <div class="Email">
+                        <div>Email</div>
+                        <input type="text" class="User_login_Email"/>
+                    </div>
+                    <div class="Password">
+                        <div>Password</div>
+                        <input type="text" class="User_login_Password"/>
+                    </div>
+                    <button onclick="Login()">Login</button>
+                    <div class="other_details">
+                        <button onclick="Forgot()">Forget Password</button>
+                        <button onclick="DonthaveAccount()">Dont have an account</button>
+                    </div>
+                </div>
+                <div class="Forget_password">
+                    <div class="heading">Forgot Password</div>
+                    <div class="Email">
+                        <div>Email</div>
+                        <input type="text" class="User_login_Email_fr"/>
+                    </div>
+                    <div class="Password">
+                        <div>Update Password</div>
+                        <input type="text" class="User_login_Password_fr"/>
+                    </div>
+                    <button onclick="Update()">Update</button>
+                </div>
+                <div class="SignUP_form">
+                    <div class="heading">SignUp Form</div>
+                    <div class="Email">
+                        <div>Email</div>
+                        <input type="text" class="User_login_Email"/>
+                    </div>
+                    <div class="Password">
+                        <div>Password</div>
+                        <input type="text" class="User_login_Password"/>
+                    </div>
+                    <div class="cn_Password">
+                        <div>Conform Password</div>
+                        <input type="text" class="User_login_Password"/>
+                    </div>
+                    <button onclick="Create()">Create</button>
+                </div>
+                 <div class="Admin_login">
+                    <div class="heading">Admin Form</div>
+                    <div class="Email">
+                        <div>Email</div>
+                        <input type="text" class="Admin_login_Email"/>
+                    </div>
+                    <div class="Password">
+                        <div>Password</div>
+                        <input type="text" class="Admin_login_Password"/>
+                    </div>
+                    <button>Login</button>
+                </div>
+            </div>
+        </div>
+        <script src="./New_login.js"></script>
+    </body>
+</html>

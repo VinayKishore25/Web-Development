@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+}
+.add_button{
+    width: 10%;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.table_division{
+    width: 30%;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    display: none;
+    border: 2px solid black;
+    width: fit-content;
+    height: fit-content;
+    font-size: 18px;
+    border-collapse: collapse;
+}
+th{
+    color: red;
+}
+button{
+    width: 50px;
+    height: 30px;
+    font-size: 18px;
+    transition: all .5s;
+}
+button:hover{
+    background-color: red;
+    color: white;
+}

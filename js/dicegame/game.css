@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right,rgb(223, 132, 132),rgb(194, 76, 76),rgb(122, 35, 35),rgb(109, 2, 2));
+}
+.activePlayer{
+    background-color: rgb(255, 255, 255);
+    opacity: 100% !important;
+}
+.player1{
+    width: 700px;
+    height: 600px;
+    background-color:white ;
+    opacity: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    
+}
+.player2{
+    width: 700px;
+    height: 600px;
+    background-color:white ;
+    opacity: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+.name{
+    margin-top: 30px;
+    color: red;
+    font-size: 56px;
+}
+#player1Score
+{
+    font-size: 205px;
+    opacity: 57%;
+    margin-top: 30px;
+}
+#player2Score
+{
+    font-size: 205px;
+    opacity: 57%;
+    margin-top: 30px;
+}
+.diceFace
+{
+    position: absolute;
+    top: 300px;
+    transform: translateX(685px);
+}
+.rolldice
+{
+    background-color: rgb(255, 0, 0);
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    font-size: 28px;
+    top: 150px;
+    transform: translateX(675px);
+    border: none;
+    border-radius: 15px;
+}
+.newgame
+{
+    background-color: rgb(255, 0, 0);
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    font-size: 28px;
+    top: 560px;
+    transform: translateX(675px);
+    border: none;
+    border-radius: 15px;
+}
+.winner{
+    background-color: black !important;
+    color: white !important;
+    opacity: 100% !important;
+}

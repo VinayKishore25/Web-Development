@@ -1,0 +1,101 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    font-family: myfont2;
+    font-size: 30px;
+    color: #B0D80C;
+    font-weight: 700;
+    margin-top: 60px;
+}
+.buttons {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.buttonchild {
+    font-family: myfont;
+    width: 150px;
+    height: 50px;
+    border: 2px solid #708a06;
+    border-radius: 30px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    transition: all .2s;
+}
+
+.buttonchild:hover {
+    background-color:#708a06;
+    color: white;
+}
+.text1 {
+    width: 80%;
+    color: rgb(124, 124, 124);
+    font-family: myfont2;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+.designs {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.design1{
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    background-image: url("../images/interior1.jpg");
+    background-size: 100% 100%;
+    box-shadow: 5px 5px 10px 6px grey;
+    transition: all .3s;
+}
+.design2{
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    background-image: url(../images/interior2.jpg);
+    background-size: 100% 100%;
+    box-shadow: 5px 5px 10px 6px grey;
+    transition: all .3s;
+}
+.design3{
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    background-image: url(../images/interior3.jpg);
+    background-size: 100% 100%;
+    box-shadow: 5px 5px 10px 6px grey;
+    transition: all .3s;
+}
+.design1:hover{
+    transform: scale(1.5,1.5);
+}
+.design2:hover{
+    transform: scale(1.5,1.5);
+}
+.design3:hover{
+    transform: scale(1.5,1.5);
+}
+@font-face {
+    font-family: myfont1;
+    src: url(../fonts/Oswald-Light.ttf);
+}
+@font-face {
+    font-family: myfont2;
+    src: url(../fonts/Image.ttf);
+}

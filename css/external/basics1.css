@@ -1,0 +1,16 @@
+/* .first .id1{
+    color: red;
+}
+.second #id2{
+    background-color: black;
+    color: yellow;
+} */
+p{
+    font-size: 100px;
+    text-shadow: 6px 4px 5px gray;
+}
+
+/* .dash{
+    text-decoration: underline dotted red ;
+    font-size: 50px;
+} */

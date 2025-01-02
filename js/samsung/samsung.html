@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product and Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+        .col-md-3 {
+            width: 30%;
+            float: left;
+            margin: 15px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .cart-section, .product-section {
+            clear: both;
+            margin: 40px 0;
+        }
+        .table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table th, .table td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        .table th {
+            background-color: #007bff;
+            color: white;
+        }
+        .cart-summary {
+            text-align: right;
+            margin-top: 20px;
+        }
+        .btn {
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Product Section -->
+    <div class="product-section">
+        <h1>Product List</h1>
+        <div class="col-md-3">
+            <div class="card">
+                <img id="image1" src="../images/s23+.webp" alt="Selected Image" class="img-fluid" style="width: 100px;">
+                <p class="card-title">Samsung S23+</p>
+                <h3 class="card-title"><i class="fa-solid fa-indian-rupee-sign"></i> 90,000</h3>
+                <select id="imageSelector1" style="width: 100%;">
+                    <option value="Space Black, 128 GB">Space Black, 128 GB</option>
+                    <option value="Gold, 128 GB">Gold, 128 GB</option>
+                    <option value="Lavender, 128 GB">Lavender, 128 GB</option>
+                </select>
+                <button type="button" class="btn" onclick="addToCart('Samsung S23+', 90000, 'imageSelector1')">Add +</button>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img id="image2" src="../images/zflod41.jpg" alt="Selected Image" class="img-fluid" style="width: 100px;">
+                <p class="card-title">Samsung Z-Fold 4</p>
+                <h3 class="card-title"><i class="fa-solid fa-indian-rupee-sign"></i> 1,20,999</h3>
+                <select id="imageSelector2" style="width: 100%;">
+                    <option value="Space Grey, 256 GB">Space Grey, 256 GB</option>
+                    <option value="Gold, 256 GB">Gold, 256 GB</option>
+                </select>
+                <button type="button" class="btn" onclick="addToCart('Samsung Z-Fold 4', 120999, 'imageSelector2')">Add +</button>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img id="image3" src="../images/zflip41.jpg" alt="Selected Image" class="img-fluid" style="width: 100px;">
+                <p class="card-title">Samsung Z-Flip 4</p>
+                <h3 class="card-title"><i class="fa-solid fa-indian-rupee-sign"></i> 93,999</h3>
+                <select id="imageSelector3" style="width: 100%;">
+                    <option value="Gold, 512 GB">Gold, 512 GB</option>
+                    <option value="Lavender, 512 GB">Lavender, 512 GB</option>
+                    <option value="Space Grey, 512 GB">Space Grey, 512 GB</option>
+                </select>
+                <button type="button" class="btn" onclick="addToCart('Samsung Z-Flip 4', 93999, 'imageSelector3')">Add +</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart-section">
+        <h1>My Cart</h1>
+        <table class="table" id="cartTable">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Variant</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Cart items will be injected here -->
+            </tbody>
+        </table>
+        <div class="cart-summary">
+            <p id="totalItems">Total Items: 0</p>
+            <p id="totalPrice">Total Price: ₹0.00</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    let cart = [];
+
+    function addToCart(productName, price, imageSelectorId) {
+        const selectedVariant = document.getElementById(imageSelectorId).value;
+        
+        const existingProductIndex = cart.findIndex(item => item.name === productName && item.variant === selectedVariant);
+
+        if (existingProductIndex !== -1) {
+            // If product is already in cart, increase its quantity
+            cart[existingProductIndex].quantity += 1;
+        } else {
+            // Add new product to the cart array
+            cart.push({
+                name: productName,
+                variant: selectedVariant,
+                price: price,
+                quantity: 1
+            });
+        }
+
+        renderCart();  // Re-render cart
+    }
+
+    function renderCart() {
+        const cartTableBody = document.querySelector('#cartTable tbody');
+        cartTableBody.innerHTML = '';  // Clear the current cart display
+        let totalItems = 0;
+        let totalPrice = 0;
+
+        cart.forEach((product, index) => {
+            const subtotal = product.price * product.quantity;
+            totalItems += product.quantity;
+            totalPrice += subtotal;
+
+            const row = `
+                <tr>
+                    <td>${product.name}</td>
+                    <td>${product.variant}</td>
+                    <td>₹${product.price.toLocaleString()}</td>
+                    <td>
+                        <input type="number" value="${product.quantity}" min="1" onchange="updateQuantity(${index}, this.value)">
+                    </td>
+                    <td>₹${subtotal.toLocaleString()}</td>
+                    <td><button onclick="removeFromCart(${index})" class="btn btn-danger">Remove</button></td>
+                </tr>
+            `;
+            cartTableBody.insertAdjacentHTML('beforeend', row);
+        });
+
+        document.getElementById('totalItems').innerText = `Total Items: ${totalItems}`;
+        document.getElementById('totalPrice').innerText = `Total Price: ₹${totalPrice.toLocaleString()}`;
+    }
+
+    function updateQuantity(index, newQuantity) {
+        cart[index].quantity = parseInt(newQuantity);
+        renderCart();  // Re-render cart
+    }
+
+    function removeFromCart(index) {
+        cart.splice(index, 1);  // Remove item from cart
+        renderCart();  // Re-render cart
+    }
+
+    renderCart();
+</script>
+
+</body>
+</html>

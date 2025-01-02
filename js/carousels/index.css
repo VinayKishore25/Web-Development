@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.parent{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1500px;
+    height: 500px;
+    border: 1px solid black;
+}
+.child{
+    width: 100px ;
+    height: 200px ;
+    border: 1px solid black;
+}
+button{
+    background-color: red;
+}
+.slick-dots{
+    display: flex;
+    position: absolute;
+    gap: 10px;
+    bottom: 0px;
+    left : 50%;
+}
+.slick-dots li button{
+    display: none;
+}

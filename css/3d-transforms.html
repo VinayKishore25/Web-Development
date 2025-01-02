@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-D shape</title>
+    <style>
+        body{
+            height: 100svh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main{
+            border: 2px solid black;
+            width: 600px;
+            height: 600px;
+
+        }
+        .upper{
+            width: 600px;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+        }
+        .middle{
+            width: 600px;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+        }
+        .bottom{
+            width: 600px;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+        }
+        .upper1{
+            width:200px;
+            height: 200px;
+            /* border: 2px solid black; */
+            perspective: 60px;
+            /* perspective-origin: bottom; */
+            transform: translateY(85px);
+        }
+        .middle1{
+            width:200px;
+            height: 200px;
+            /* border: 2px solid black; */
+            perspective: 60px;
+            perspective-origin: right;
+            /* transform: translateX(-220px); */
+        }
+        .middle2{
+            width:200px;
+            height: 200px;
+            /* border: 2px solid black; */
+        }
+        .middle3{
+            width:200px;
+            height: 200px;
+            perspective: 60px;
+            perspective-origin: left;
+            transform: translateX(-220px);
+        }
+        .bottom1{
+            width: 200px;
+            height: 200px;
+            /* border:2px solid black; */
+            perspective: 25px;
+            
+            transform: translate(-9px,-146px);
+        }
+        .m3{
+            height: 200px;
+            width:  400px;
+            transform-style: preserve-3d;
+            transform: rotateY(30deg);
+            background-color: beige;
+        }
+        .m1{
+            height: 200px;
+            width:  400px;
+            transform-style: preserve-3d;
+            transform: rotateY(30deg);
+            background-color: beige;
+        }
+        .b1{
+            height: 300px;
+            width: 220px;
+            background-color: beige;
+            transform-style: preserve-3d;
+            transform: rotateX(30deg);
+        }
+        .u1
+        {
+            height: 300px;
+            width: 180px;
+            background-color: beige;
+            transform-style: preserve-3d;
+            transform: rotateX(-30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="upper">
+            <div class="upper1">
+                <div class="u1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem eligendi ullam ipsum nesciunt quaerat doloremque. Repudiandae eos amet veritatis. Quam porro rerum voluptatum explicabo, suscipit assumenda nihil nemo inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium minus, facere, quidem provident eos perspiciatis illo iure aspernatur, explicabo inventore voluptatum nostrum repudiandae incidunt saepe cum obcaecati quia aut magni?</div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="middle1">
+                <div class="m1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ullam quae molestiae! Fugit dicta doloribus aperiam perferendis adipisci quos consequuntur, quisquam iste eligendi rerum ipsam deleniti obcaecati iure cumque repellat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae repellat quidem reiciendis cum, numquam error pariatur aliquid minima eius temporibus dicta ipsa voluptatibus iste odio hic? Voluptatibus, consequatur quidem. Deleniti!</div>
+            </div>
+            <div class="middle2"></div>
+            <div class="middle3">
+                <div class="m3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quae itaque dolores sed obcaecati modi mollitia ab sit porro. Aperiam saepe dolore labore fugit quas autem voluptates ut reiciendis Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis asperiores deserunt ducimus, repellendus dignissimos vero quam repudiandae voluptates debitis cum, aspernatur beatae ad harum porro vitae! Eaque error voluptates voluptate.</div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom1">
+                <div class="b1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum est esse ducimus beatae totam officia nam, repellat quae minus voluptates unde at laudantium earum eligendi, amet dolorum blanditiis necessitatibus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quaerat consequuntur voluptatum. Reiciendis ad blanditiis explicabo iure vel consequatur, debitis a eum beatae maxime quis quia! Libero praesentium corrupti quas!</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

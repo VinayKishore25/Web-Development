@@ -1,0 +1,170 @@
+#main{
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid black;
+}
+.front{
+    width: 100%;
+    height: 100svh;
+    border: 2px solid black;
+}
+.cut1{
+    background-color: white;
+    position: absolute;
+    top : 210px;
+    left: 320px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.cut2{
+    background-color: white;
+    position: absolute;
+    top : 450px;
+    left: 320px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.cut3{
+    background-color: white;
+    position: absolute;
+    top : 205px;
+    left: 940px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.cut4{
+    background-color: white;
+    position: absolute;
+    top : 450px;
+    left: 940px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.cut5{
+    background-color: white;
+    position: absolute;
+    top : 210px;
+    left: 1145px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.cut6{
+    background-color: white;
+    position: absolute;
+    top : 450px;
+    left: 1145px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+#ticket{
+    width: 600px;
+    height: 250px;
+    background-color: brown;
+    background-image: url(../images/background.jpg);
+    background-size: 100% 100%;
+}
+#ticketext{
+    width: 250px;
+    height: 250px;
+    background-color: black;
+}
+#inner{
+    border: 2px dotted gold;
+}
+.name{
+    color: white;
+    position: relative;
+    top: 60px;
+    left: 60px;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.name1{
+    color: white;
+    position: relative;
+    top: 60px;
+    left: 160px;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bar{
+    /* background-color: aliceblue; */
+    position: relative;
+    top: 100px;
+    left: 50px;
+    width: 150px;
+    height: 60px;
+    background-image: url(../images/barcode2.png);
+    background-size: cover;
+}
+p{
+    transform:rotate(-90deg);
+    font-size: 28px;
+    position: relative;
+    top: -105px;
+    left: 50px;
+    z-index: 2;
+    background: linear-gradient(to bottom,white,white,black);
+    color: transparent;
+    background-clip: text;
+}
+.courses{
+    width: 150px;
+    height: 230px;
+    position: relative;
+    top: -80px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    border: 2px dotted red;
+    color: white;
+    z-index: 0;
+}
+.course1{
+    position: relative;
+    top: 0px;
+    left: 30px;
+    font-size: 18px;
+
+}
+.cou1{
+    position: relative;
+    top: 0px;
+    left: 50px;
+    font-size: 18px;
+}
+.part3{
+    color: white;
+    position: relative;
+    width: 130px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: -240px;
+    left: 160px;
+    border: 2px dotted goldenrod;
+    background-color: black;
+    z-index: 1;
+}
+.hover{
+    border: 2px solid rebeccapurple;
+    color: black;
+    /* display: none; */
+}
+/* #main:hover{
+    display: block;
+} */

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        /* .parent{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            transition-property: width,height;
+            transition-duration: 2s;
+            transition-delay: 3s;
+            transition-timing-function: linear;
+        } */
+        /* .parent:hover{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+        } */
+        /* .parent::after{
+            content: "hi hello";
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: white;
+        } */
+        body{
+            height: 100svh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .button{
+            height: 30px;
+            width: 100px;
+            /* border-radius: 10px; */
+            color: rgb(239, 100, 26);
+            border: 2px solid rgb(233, 84, 25);
+            position: relative;
+            overflow: hidden;
+            transform: skewX(20deg);
+        }
+        .button::before{
+            content: "";
+            position: absolute;
+            top:0;
+            left:0px;
+            width: 0px;
+            height: 100%;
+            color: white;
+            background-image: url(./images/coverpic.jpg);
+            background-size: 100% 100%;
+
+        }
+        .button:hover::before{
+            width:120%;
+            transition: width 2s linear;
+            z-index: -1;
+        }
+        .button:hover{
+            color: transparent;
+            transition: color 2s linear;
+            z-index: 999;
+        }
+        .me{
+            height: 30px;
+            width: 80px;
+            margin-top: 30px;
+            border-radius: 15px;
+            color: rgb(239, 100, 26);
+            border: 2px solid rgb(233, 84, 25);
+            position: relative;
+            overflow: hidden;
+            /* transform: skewX(20deg); */
+        }
+        .me::before{
+            content: "";
+            position: absolute;
+            top:0;
+            left:0px;
+            width: 26px;
+            height: 26px;
+            color: white;
+            background-color: red;
+            /* background-image: url(./images/coverpic.jpg); */
+            background-size: 100% 100%;
+            /* transform: skew(10deg); */
+            border-radius: 13px;
+        }
+        .me:hover::before{
+            /* width:100%; */
+
+            left: 50px;
+            transition: left 1s ease-in-out;
+            z-index: 1;
+        }
+        .me:hover{
+            color: transparent;
+            transition: color 0.5s ease-in;
+            /* z-index: 999; */
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="parent">
+    </div> -->
+    <button class="button">Drive Ready</button>
+    <button class="me">My Photo</button>
+</body>
+</html>

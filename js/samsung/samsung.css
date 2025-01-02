@@ -1,0 +1,28 @@
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        color: blueviolet;
+    }
+
+    .kar,
+    .kar1,
+    .kar2,
+    .kar3,
+    .kar4,
+    .kar5,
+    .kar6,
+    .kar7,
+    .kar8,
+    .kar9,
+    .kar10,
+    .kar11,
+    .kar12,
+    .kar13,
+    .kar14,
+    .kar15 {
+        background-color: whitesmoke;
+        color: black;
+        display: none;
+        font-size: 15px;
+    }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="./form.js"></script>
+</head>
+<body>
+    <form>
+        <label>FirstName:</label>
+        <input value="" type="text" onchange="{FirstName(event)}" placeholder="Enter your FirstName"><br>
+        <label>SecondName:</label>
+        <input value="" type="text" onchange="{SecondName(event)}" placeholder="Enter your SecondName"><br>
+        <label>Date of Birth:</label>
+        <input value="" type="date" onchange="{Date_of_Birth(event)}" placeholder="Enter your Date Of Birth"><br>
+        <label>Age</label>
+        <input value="" type="number" onchange="{age(event)}" placeholder="Enter your age"><br>
+        <label>FatherName:</label>
+        <input value="" type="text" onchange="{Father_Name(event)}" placeholder="Enter your Father Name"><br>
+        <label>MotherName:</label>
+        <input value="" type="text" onchange="{Mother_Name(event)}" placeholder="Enter your Mother Name"><br>
+        <label>Address:</label>
+        <input value="" type="text" onchange="{Address(event)}" placeholder="Enter your Address"><br>
+        <details>
+            <summary>Certifications</summary>
+            <ul style="list-style-type: none;">
+                <li><input type="checkbox" value="C" onchange="{add_certificate(event)}"> C </li>
+                <li><input type="checkbox" value="python" onchange="{add_certificate(event)}"> python</li>
+                <li><input type="checkbox" value="JavaScript" onchange="{add_certificate(event)}"> JavaScript</li>
+                <li><input type="checkbox" value="Java" onchange="{add_certificate(event)}"> Java</li>
+                <li><input type="checkbox" value="Cpp" onchange="{add_certificate(event)}"> Cpp</li>
+                <li><input type="checkbox" value="Swift" onchange="{add_certificate(event)}"> Swift</li>
+            </ul>
+        </details>
+        <label>Academics Details</label>
+        <table border="1px">
+            <tr>
+                <th>N.I</th>
+                <th>Year of Passed Out</th>
+                <th>Percentage</th>
+                <th>Institution</th>
+            </tr>
+            <tr>
+                <td>SSC</td>
+                <td><input type="date" value="" onchange="{add_ssc(event)}"></td>
+                <td><input type="number" value="" onchange="{add_ssc(event)}"></td>
+                <td><input type="text" value="" onchange="{add_ssc(event)}"></td>
+            </tr>
+            <tr>
+                <td>Inter</td>
+                <td><input type="date" value="" onchange="{add_inter(event)}"></td>
+                <td><input type="number" value="" onchange="{add_inter(event)}"></td>
+                <td><input type="text" value="" onchange="{add_inter(event)}"></td>
+            </tr>
+            <tr>
+                <td>BTech</td>
+                <td><input type="date" value="" onchange="{add_btech(event)}"></td>
+                <td><input type="number" value="" onchange="{add_btech(event)}"></td>
+                <td><input type="text" value="" onchange="{add_btech(event)}"></td>
+            </tr>
+        </table>
+        <label>Skills:</label>
+        <input type="text" value="" onchange="{add_skills(event)}"><br>
+        <label>Hobbies:</label>
+        <input type="text" value="" onchange="{add_hobbies(event)}"><br>
+        <label>Profile Photo:</label>
+        <input type="file">
+        <label>Badges:</label>
+        <input type="text" value="" onchange="{add_badges(event)}"><br>
+        <label>Description</label>
+        <input type="text" value="" onchange="{add_desc(event)}"><br>
+        <button onclick="{get_submit(event)}">submit</button>
+    </form>
+</body>
+</html>
